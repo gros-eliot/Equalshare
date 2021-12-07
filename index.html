@@ -8,29 +8,43 @@
     <title>Equalshare</title>
 </head>
 <body>
-    <header class="header"> 
-            <a href="index.html"><img src="public/icones/Equalshare.svg" alt="Equalshare"></a>
-            <a href="/"><img src="" alt="Menu Hamburger"></a>
+    <header> 
+            <a href="/"><img src="public/icones/Equalshare.svg" alt="Equalshare"></a>
+            <span></span>
+            <nav>
+                <ul>
+                    <li><a href="article1.html">Écoféminisme, féminisme écologique</a></li>
+                    <li><a href="article2.html">Pornographie et féminisme</a></li>
+                    <li><a href="article3.html">Contre-culture confiture</a></li>
+                    <li><a href="frise.html">Frise</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="glossaire.html">Glossaire</a></li>
+                    <li><a href="a_propos_contact.html">À propos & Contact</a></li>
+                    <li><a href="autres_projets.html">Autres projets</a></li>
+                    <li><img src="public/icones/Drapeau fr selec.svg" alt="LANGUE FRANçAISE ACTIVé"></li>
+                    <li><a href=""><img src="public/icones/Dreapeau ang.svg" alt="LANGUE ANGLAISE DéSACTIVé"></li>
+                </ul>
+            </nav>
     </header>
     
-    <main>
-        <div class="hero">
-            <h1 class="hero__title">Le site qui partage l’égalité.</h1>
-            <h2 class="hero__desc">Afin que la femme soit considérée égale à l’homme, ces grandes figures ont bouleversé 
-                à travers des articles et des récits sous différents formats.</h2>
-                les cultures et les façons de penser. Découvrez les combats du féminisme 
-            <div class="hero__start">
+    <main id="backhome">
+        <div>
+            <h1>Le site qui partage l’égalité.</h1>
+            <h2>Afin que la femme soit considérée égale à l’homme, ces grandes figures ont bouleversé 
+                à travers des articles et des récits sous différents formats les cultures et les façons de penser. Découvrez les combats du féminisme .</h2>
+                
+            <div>
                 <p>Commencer !</p>
-                 <button>
+                 <a href="#scroll">
                 <img src="public/icones/icon scroll 1.svg" alt="Bouton scroll accueil">
-                </button>
+                 </a>
             </div>
         </div>
 
 
 
         <section>
-            <article>
+            <article id="scroll">
                 <h2>
                     Écoféminisme : le mouvement féministe écologique
                     <img src="public/img/art1-hp.jpg" alt="manifestation écoféministe">
@@ -40,7 +54,7 @@
                     est un courant philosophique des années 70 de plus en plus populaire.
                     Découvrez son histoire.
                 </h3>
-                <button><a href="article1.html">En savoir plus... </a></button>
+                <a href="article1.html">En savoir plus... </a>
             </article>
 
             <article>
@@ -52,7 +66,7 @@
                     Dans le but de mettre fin à la pornographie et à l'humiliation des femmes, 
                     Andrea Dworkin s'est battue durant l'entièreté de sa vie. Voici sa biographie.
                 </h3>
-                <button><a href="article2.html">En savoir plus... </a></button>
+                <a href="article2.html">En savoir plus... </a>
             </article>
 
             <article>
@@ -64,7 +78,7 @@
                     Agathe Parmentier (Ismène de Beauvoir) publie en 2013 un recueil de chroniques 
                     qu'elle nomme "Contre-culture confiture". Découvrez-le ici. 
                 </h3>
-                <button><a href="article3.html">En savoir plus... </a></button>
+                <a href="article3.html">En savoir plus... </a>
             </article>
 
         </section>
@@ -76,14 +90,14 @@
             <article>
                 <h2>Frise</h2>
                 <h3>Découvrez une frise interactive traitant de l’écoféminisme.</h3>
-                <button> <a href="frise.html">Découvrir</a></button>
+                <a href="frise.html">Découvrir</a>
                 <img src="public/img/frise fond.jpg" alt="Carte du monde pour la frise">
             </article>
 
             <article>
                 <h2>Galerie</h2>
                 <h3>Découvrez des figures françaises et internationales du féminisme.</h3>
-                <button> <a href="galerie.html">Découvrir</a></button>
+                <a href="galerie.html">Découvrir</a>
                 <img src="public/img/galerie fond.jpg" alt="Photographie d'une galerie">
             </article>
 
@@ -93,7 +107,7 @@
             </article>
         </section>
 
-        <button><img src="public/icones/haut page.svg" alt="Bouton haut de page"></button>
+        <a href="#backhome"><img src="public/icones/haut page.svg" alt="Bouton haut de page"></a>
 
     </main>
     
