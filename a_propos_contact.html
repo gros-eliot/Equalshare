@@ -9,14 +9,27 @@
 </head>
 <body>
     <header> 
-            <a href="index.html"><img src="public/icones/Equalshare.svg" alt="Logo du site Equalshare"></a>
-            <a href="../"><img src="public/icones/icon back.svg" alt="Flèche retour"></a>
-            <a href="/"><img src="" alt="Menu Hamburger"></a>
+        <a href="/"><img src="public/icones/Equalshare.svg" alt="Equalshare"></a>
+        <a href="javascript:history.back()"><img src="public/icones/icon_back.svg" alt="Flèche retour"></a>
+        <span></span>
+        <nav>
+            <ul>
+                <li><a href="article1.html">Écoféminisme, féminisme écologique</a></li>
+                <li><a href="article2.html">Pornographie et féminisme</a></li>
+                <li><a href="article3.html">Contre-culture confiture</a></li>
+                <li><a href="frise.html">Frise</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="glossaire.html">Glossaire</a></li>
+                <li><a href="a_propos_contact.html">À propos & Contact</a></li>
+                <li><a href="autres_projets.html">Autres projets</a></li>
+                <li><img src="public/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé"></li>
+                <li><a href="/"><img src="public/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé"></a></li>
+            </ul>
+        </nav>
     </header>
 
-
-    <main>
-        <section>
+    <main id="backhome">
+        <div>
             <h1>À propos</h1>
             <h2>Concepteur du site</h2>
                 <p>
@@ -36,14 +49,16 @@
             
             <h2>Réseaux sociaux</h2>
                 <p>Suivez-moi également sur les réseaux sociaux !</p>
-                <button> <img src="public/icones/icon scroll 1.svg" alt="Bouton scroll accueil"></button>
-        </section>
+                <a href = "#scroll"><img src="public/icones/icon_scroll_1.svg" alt="Bouton pour scroller"></a>
 
-        <selection>
+
+            </div>
+
+        <div>
             <h1>CONTACT</h1>
             <h2>
                 Une remarque ? Posez-la ici !
-            </h2>
+            </h2>_
             <form>
                 <label for="name">Prénom</label>
                 <input type="text" name="name" id="name">
@@ -59,10 +74,12 @@
                 <br>
                 <button type="submit">OK !</button>
             </form>
-        </selection>
+        </div>
+    
+        <a href="#backhome"><img src="public/icones/haut_page.svg" alt="Bouton haut de page"></a>
     </main>
     
-    <footer>
+    <footer id=scroll>
 
         <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com">eliot.gpro@gmail.com</a></p>
         <ul>
