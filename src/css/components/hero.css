@@ -1,0 +1,22 @@
+@import url(../utils/variable.css);
+
+.hero__title {
+    font-size: var(--titre-accueil);
+    font-family: 'Alata', sans-serif;
+    font-weight: normal;
+    color: var(--black)
+}
+
+.hero__desc {
+    font-size: var(--footer-and-desc-accueil);
+    font-family: 'Alata', sans-serif;
+    font-weight: normal;
+    color: var(--black)
+}
+
+.hero__start {
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    font-weight: normal;
+    color: var(--white)
+}

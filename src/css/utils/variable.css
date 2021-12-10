@@ -1,0 +1,29 @@
+:root {
+/* Color styles */
+--black: rgba(0,0,0,1);
+--white: rgba(255, 255, 255, 1);
+--grey-background: rgba(212,212,212, 1);
+--grey-text: rgba(51, 51, 51, 1);
+--vert: rgba(126, 255, 216, 1);
+--orange: rgba(255, 190, 115, 1);
+--rouge: rgba(255, 166, 156, 1);
+--bleu: rgba(90, 167, 238, 1);
+--violet: rgba(255, 116, 241, 1);
+
+/* Text-size styles */
+
+--titre-accueil: 2.625rem;                  /*42px*/
+--titre-extras: 4rem;                       /*64px*/
+--menu-hamb-1-and-titre-art-acc: 1.875rem;  /*30px*/
+--menu-hamb-2: 1.625rem;                    /*26px*/
+--menu-hamb-3-and-start: 1.5rem;            /*24px*/
+--footer-and-desc-accueil: 1.125rem;        /*18px*/
+
+--titre-article: 2.25rem;                   /*36px*/
+--sous-titre-article: 1.625rem;             /*26px*/
+--corps: 1.063rem;                          /*17px*/
+--description: 0.75rem;                     /*12px*/
+
+/* Effect styles */
+--effet-galerie:  -1px 10px 4px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,9 @@
+footer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background: var(--black);
+    color: var(--white);
+    padding: 5%;
+    font-size: var(--footer-and-desc-accueil);
+}
