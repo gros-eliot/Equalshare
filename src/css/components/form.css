@@ -1,0 +1,11 @@
+input, textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    background-color:var(--transparent-white);
+    width: 90%;
+    align-items: center;
+    margin-left: var(--space1st);
+    margin-right: var(--space1st);
+  }

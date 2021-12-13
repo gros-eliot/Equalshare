@@ -4,31 +4,50 @@
   box-sizing: border-box;
 }
 
-/*body {
+/* POUR LE BACKGROUND GRADIENT A VARIABLES
+body {
     background: linear-gradient(90, var(--violet), var(--bleu), var(--rouge), var(--orange), var(--vert))
-}*/
+}
+*/
+
+/* GENERALITES POLICES ET COULEUR */
 
 body {  
     background: linear-gradient(#ff74f1, #5aa7ee, #ffa69c, #ffbe73, #7effd8);
     font-family: 'ABeeZee', sans-serif;
-/*
-font-family: 'ABeeZee', sans-serif;
-font-family: 'Alata', sans-serif;
-font-family: 'Roboto', sans-serif;
-*/
     font-size: var(--corps);
 }
 
+
 h1, h2, h3 {
     font-family: 'Alata', sans-serif;
-    font-weight: normal;
+    font-weight:100;
 }
 
-a {
-    color: blueviolet;
-}
 
-main {
+/* padding et marges */
+h1, h2, h3, p {
     padding-left: 5%;
     padding-right: 5%;
 }
+ 
+h3, p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+a {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.container {
+    padding-left: var(--space3rd);
+    padding-right: var(--space3rd);
+}
+
+.listUnstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }

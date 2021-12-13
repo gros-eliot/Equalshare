@@ -1,5 +1,11 @@
-img {
+.basic-image {
     max-width: 100%;
     height: auto;
-    padding:0;
+    padding: 0;
+  }
+
+  figcaption {
+    color: var(--grey-text);
+    font-size: var(--description-article);
+    text-align: center;
   }
