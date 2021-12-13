@@ -1,4 +1,4 @@
-footer {
+.footerpage {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
@@ -7,3 +7,18 @@ footer {
     padding: 5%;
     font-size: var(--footer-and-desc-accueil);
 }
+
+.footer__link {
+    color: var(--white);
+    font-weight: normal;
+}
+
+.back__button {
+    text-align: center;
+  }
+
+.listUnstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
