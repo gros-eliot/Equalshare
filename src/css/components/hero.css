@@ -1,17 +1,27 @@
-@import url(../utils/variable.css);
-
+.hero {
+    top: 0;
+    left:0;
+    margin-top: 10vh;
+    margin-bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .hero__title {
     font-size: var(--titre-accueil);
     font-family: 'Alata', sans-serif;
     font-weight: normal;
-    color: var(--black)
+    text-align: center;
+    color: var(--black);
 }
 
 .hero__desc {
     font-size: var(--footer-and-desc-accueil);
     font-family: 'Alata', sans-serif;
     font-weight: normal;
-    color: var(--black)
+    color: var(--black);
+    text-align: normal;
+    margin-top: 2vh;
 }
 
 .hero__start {
@@ -23,5 +33,10 @@
 
 .hero__start__button {
     text-align: center;
-    animation: 3s ease-in-out;
+}
+
+.hero__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }

@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-/* POUR LE BACKGROUND GRADIENT A VARIABLES
-body {
-    background: linear-gradient(90, var(--violet), var(--bleu), var(--rouge), var(--orange), var(--vert))
-}
-*/
-
 /* GENERALITES POLICES ET COULEUR */
 
 body {  

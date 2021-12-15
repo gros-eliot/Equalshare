@@ -14,5 +14,23 @@
 }
 
 .back__button {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 6vh;
+  }
+
+.back__target {
+  visibility: hidden;
+  padding-top: 10vh;
+}
+
+.footerpage__icon {
+  display: flex;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.footerpage__iconli {
+    width: 5vh;
+    height: 5vh;
   }

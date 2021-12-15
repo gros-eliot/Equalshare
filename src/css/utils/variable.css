@@ -16,6 +16,7 @@
 /* Text-size styles */
 
 --titre-accueil: 2.625rem;                  /*42px*/
+--titre-accueil-extras: 3rem;               /*48px*/
 --titre-extras: 4rem;                       /*64px*/
 --menu-hamb-1-and-titre-art-acc: 1.875rem;  /*30px*/
 --menu-hamb-2: 1.625rem;                    /*26px*/

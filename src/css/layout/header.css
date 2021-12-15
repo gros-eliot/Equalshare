@@ -1,11 +1,13 @@
 .headerpage {
+    position: fixed;
     background: var(--black);
     color: var(--white);
-    padding: 2%;
+    padding: 1vh;
     top: 0;
     left: 0;
     /*position: fixed;*/
     width: 100%;
+    z-index: 3;
 }
 
 .header__start {
@@ -13,12 +15,14 @@
     align-items: flex-start;
   }
 
-.header__link {
-    color: var(--white);
+.menu__link {
+    color:var(--white);
     font-weight: normal;
 }
 
-.header__end {
-    display: flex;
-    gap: var(--space2x);
-  }
+/*Liens du menu pour le mettre en couleur (beta)
+.a[attr*="header__link"] {
+    color: var(--white);
+    font-weight: normal;
+}
+*/
