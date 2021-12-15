@@ -13,6 +13,7 @@
     font-weight: normal;
 }
 
+/* bouton retour haut de page*/
 .back__button {
     display: flex;
     justify-content: center;
@@ -24,6 +25,8 @@
   padding-top: 10vh;
 }
 
+
+/* icones réseaux sociaux*/
 .footerpage__icon {
   display: flex;
   justify-content: center;
@@ -34,3 +37,24 @@
     width: 5vh;
     height: 5vh;
   }
+
+.footerpage__iconli:hover {
+  filter: opacity(80%);
+  transform: rotate(360deg);
+  transition: transform 500ms ease-out;
+}
+
+/*icones langues*/
+  .footerpage__lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 2vh;
+  }
+
+/*animation haut de page*/
+/* EN CONSTRUCTION !!!!
+  .back__button__link:active {
+    transition: 1000ms ease-in-out;
+  }
+  */

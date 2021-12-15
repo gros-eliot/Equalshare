@@ -67,7 +67,15 @@
     border-radius: 25px;
 }
 
+.homepage__link:hover {
+    background-color: var(--bleu);
+    transition: background-color 200ms ease-in-out;
+}
 
+.homepage__link:hover {
+    color : var(--white);
+    transition: color 200ms ease-in;
+}
 
 /*Fond de la desc et du bouton card*/
 .card__bg {

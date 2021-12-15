@@ -21,8 +21,7 @@
 
   /*marges menu (on modifie l'ul)*/
   .menu__list {
-    position: absolute;
-    margin-top: 3vh;
+    margin-top: 110px ;
     margin-left: 5vw;
   }
 
@@ -54,19 +53,12 @@
   font-weight: 100;
 }
 
-.menu__lang {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 10vh;
-  margin-bottom: 10vh;
-  margin-left: 20%;
-}
-
 
 /* mise en forme logo Equalshare du menu hamburger*/
-.menu__list__img {
+.menu__img {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 5vw;
   width: 120px;
 }
 

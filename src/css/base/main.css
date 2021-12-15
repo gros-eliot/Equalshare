@@ -56,3 +56,9 @@ button {
     padding: 20px;
     cursor: pointer;
 }
+
+/* bug scroll iOS réglé*/
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}

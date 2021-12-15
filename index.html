@@ -27,8 +27,8 @@
             </button>
 
             <nav  class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <img src="assets/icones/Equalshare.svg" alt="Logo Equalshare du menu hamburger" class="menu__img">
                 <ul class="menu__list listUnstyled">
-                    <li><img src="assets/icones/Equalshare.svg" alt="Logo Equalshare du menu hamburger" class="menu__list__img"></li>
                     <li class="menu__item"><a href="article1.html" class="menu__link">Écoféminisme, féminisme écologique</a></li>
                     <li class="menu__item"><a href="article2.html" class="menu__link">Pornographie et féminisme</a></li>
                     <li class="menu__item"><a href="article3.html" class="menu__link">Contre-culture confiture</a></li>
@@ -38,10 +38,6 @@
                     <li class="menu__item"><a href="a_propos_contact.html" class="menu__link__3">À propos & Contact</a></li>
                     <li class="menu__item"><a href="autres_projets.html" class="menu__link__3">Autres projets</a></li>
                 </ul>
-                <div class="menu__lang">
-                    <img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé" class="menu__lang-img">
-                    <a href="/"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="menu__lang-img"></a>
-                </div>
             </nav>
         </div>
     </header>
@@ -147,20 +143,25 @@
         <!--footer de la page-->
 
         <div class="back__button">
-            <a href="#backhome"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
+            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
         </div>
 
     </main>
     
     <footer class="footerpage container">
 
+        <div class="footerpage__lang">
+            <img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé" class="footer__lang-img">
+            <a href="/"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="footer__lang-img"></a>
+        </div>
+
         <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
 
         <ul class="footer__list listUnstyled footerpage__icon">
-            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
-            <li><a href="https://www.instagram.com/equalshare_mmi/"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
-            <li><a href="https://twitter.com/equalshare_mmi"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
-            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
+            <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
         </ul>
 
         <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <br>
