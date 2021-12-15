@@ -25,6 +25,14 @@
   padding-top: 10vh;
 }
 
+/*animation haut de page*/
+/* EN CONSTRUCTION !!!!
+  .back__button__link:active {
+    transition: 1000ms ease-in-out;
+  }
+  */
+
+
 
 /* icones réseaux sociaux*/
 .footerpage__icon {
@@ -38,6 +46,7 @@
     height: 5vh;
   }
 
+          /* animation réseaux sociaux*/
 .footerpage__iconli:hover {
   filter: opacity(80%);
   transform: rotate(360deg);
@@ -49,12 +58,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 3vh;
     margin-bottom: 2vh;
   }
+/*animation langue*/
 
-/*animation haut de page*/
-/* EN CONSTRUCTION !!!!
-  .back__button__link:active {
-    transition: 1000ms ease-in-out;
+.footerpage__lang-link:hover {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+}
+/* taille des images (langues)*/
+  .footer__lang-img {
+    width: 40px;
   }
-  */
