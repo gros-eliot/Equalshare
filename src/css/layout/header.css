@@ -8,21 +8,17 @@
     /*position: fixed;*/
     width: 100%;
     z-index: 3;
-}
-
-.header__start {
     display: flex;
-    align-items: flex-start;
-  }
-
-.menu__link {
-    color:var(--white);
-    font-weight: normal;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/*Liens du menu pour le mettre en couleur (beta)
-.a[attr*="header__link"] {
-    color: var(--white);
-    font-weight: normal;
+.header__menu-btn {
+    top: -0.5vw;
+    margin-right: 4vw;
 }
-*/
+
+.header__logo {
+    margin-left: 2vw;
+}
+

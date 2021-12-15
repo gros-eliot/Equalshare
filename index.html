@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <link rel='stylesheet' href='src/css/style.css'>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
@@ -19,31 +19,35 @@
             <a href="/"><img src="assets/icones/Equalshare.svg" alt="Equalshare"></a>
         </div>
     
-        <!-- MENU HAMBURGER
-        <div>
-            <button>
-                <span></span>
+        <div class="headerpage__menu">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                x-on:click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
             </button>
 
-            <nav>
+            <nav  class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list listUnstyled">
+                    <li><img src="assets/icones/Equalshare.svg" alt="Logo Equalshare du menu hamburger" class="menu__list__img"></li>
                     <li class="menu__item"><a href="article1.html" class="menu__link">Écoféminisme, féminisme écologique</a></li>
                     <li class="menu__item"><a href="article2.html" class="menu__link">Pornographie et féminisme</a></li>
                     <li class="menu__item"><a href="article3.html" class="menu__link">Contre-culture confiture</a></li>
-                    <li class="menu__item"><a href="frise.html" class="menu__link">Frise</a></li>
-                    <li class="menu__item"><a href="galerie.html" class="menu__link">Galerie</a></li>
-                    <li class="menu__item"><a href="glossaire.html" class="menu__link">Glossaire</a></li>
-                    <li class="menu__item"><a href="a_propos_contact.html" class="menu__link">À propos & Contact</a></li>
-                    <li class="menu__item"><a href="autres_projets.html" class="menu__link">Autres projets</a></li>
-                    <li class="menu__item"><img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé"></li>
-                    <li class="menu__item"><a href="/"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé"></a></li>
+                    <li class="menu__item"><a href="frise.html" class="menu__link__2">Frise</a></li>
+                    <li class="menu__item"><a href="galerie.html" class="menu__link__2">Galerie</a></li>
+                    <li class="menu__item"><a href="glossaire.html" class="menu__link__3">Glossaire</a></li>
+                    <li class="menu__item"><a href="a_propos_contact.html" class="menu__link__3">À propos & Contact</a></li>
+                    <li class="menu__item"><a href="autres_projets.html" class="menu__link__3">Autres projets</a></li>
                 </ul>
-            </nav>-->
+                <div class="menu__lang">
+                    <img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé" class="menu__lang-img">
+                    <a href="/"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="menu__lang-img"></a>
+                </div>
+            </nav>
         </div>
     </header>
 
     <main>
-        <!--hero-->
+        <!--hero de la page-->
         <div class="hero">
             <div class="hero__img">
                 <img src="assets/img/cloud.svg" alt="nuage">
@@ -134,10 +138,13 @@
             </article>
 
             <article>
-                <h2>Vous définisseriez-vous féministe ?</h2>
+                <h2>Titre_video</h2>
+                <video controls src=""></video>
                 <p>Description vidéo</p>
             </article>
         </div>
+
+        <!--footer de la page-->
 
         <div class="back__button">
             <a href="#backhome"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
@@ -145,7 +152,6 @@
 
     </main>
     
-    <!--footer de la page-->
     <footer class="footerpage container">
 
         <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
@@ -157,7 +163,7 @@
             <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
         </ul>
 
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département 
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <br>
             <a href="http://mmimontbeliard.com/" class="footer__link">MMi de Montbéliard</a></p>
     </footer>
 </body>

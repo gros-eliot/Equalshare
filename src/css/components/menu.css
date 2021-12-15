@@ -1,0 +1,115 @@
+/*paramètres généraux du menu*/
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right : 0;
+    background-color: var(--black);
+    font-family: 'Alata', sans-serif;
+    transition: all .3s ease-in-out;
+  }
+
+  /*ouvrir le menu*/
+  .menu--open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /*marges menu (on modifie l'ul)*/
+  .menu__list {
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 5vw;
+  }
+
+  /*espace entre chaque item du menu + marge liste*/
+  .menu__item {
+    margin: 3vh 8vw 1% 1%;
+  }
+
+  /* modification de l'apparence des liens du menu*/
+  .menu__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--menu-hamb-1-and-titre-art-acc);
+    font-weight:100;
+  }
+
+  .menu__link__2 {
+    color: var(--violet);
+    text-decoration: none;
+    font-size: var(--menu-hamb-2);
+    font-weight:100;
+    display: flex;
+    flex-direction: row;
+  }
+.menu__link__3 {
+  color: var(--grey);
+  text-decoration: none;
+  font-size: var(--menu-hamb-3-and-start);
+  font-weight: 100;
+}
+
+.menu__lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 20%;
+}
+
+
+/* mise en forme logo Equalshare du menu hamburger*/
+.menu__list__img {
+  width: 120px;
+}
+
+/* Mise en forme du bouton de menu "Hamburger" */
+.menu-btn {
+    position: relative;
+    z-index: 3;
+    width: 30px;  
+  }
+
+        /*Mise en forme des barres du menu*/
+  .menu-btn__bar,
+  .menu-btn__bar::before,
+  .menu-btn__bar::after {
+    content: '';
+    background: var(--white);
+    height: 3px;
+    border-radius: 25px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    transition: all .3s ease-in-out;
+  }
+
+  .menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+  }
+  
+
+/* Transformation en croix*/
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(90deg);
+  top: 0;
+}

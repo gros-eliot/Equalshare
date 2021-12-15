@@ -30,18 +30,29 @@ h3, p {
     padding-right: 2%;
 }
 
+/*liens (généraux)*/
 a {
     color: var(--black);
     font-weight: bold;
 }
-
+  /*marges globales de la page*/
 .container {
     padding-left: var(--space3rd);
     padding-right: var(--space3rd);
 }
 
+  /*les listes à puce avec cette classe n'ont plus de puces*/
 .listUnstyled {
     list-style: none;
     margin: 0;
     padding: 0;
   }
+
+  /* le bouton HTML par défaut n'apparaît pas*/
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 20px;
+    cursor: pointer;
+}

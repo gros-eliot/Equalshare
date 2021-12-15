@@ -1,3 +1,5 @@
+/* appliquer cette classe aux images devant prendre toute la place de
+l'écran*/
 .basic-image {
     max-width: 100%;
     height: auto;
