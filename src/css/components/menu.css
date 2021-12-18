@@ -47,13 +47,16 @@
     flex-direction: row;
   }
 .menu__link__3 {
-  color: var(--grey);
+  color: var(--light-grey);
   text-decoration: none;
   font-size: var(--menu-hamb-3-and-start);
   font-weight: 100;
 }
 
-
+a[class*="menu__link"]:hover{
+  color: var(--grey);
+  transition: color 200ms ease-in-out;
+}
 /* mise en forme logo Equalshare du menu hamburger*/
 .menu__img {
   position: absolute;
@@ -75,7 +78,7 @@
   .menu-btn__bar::after {
     content: '';
     background: var(--white);
-    height: 3px;
+    height: 4px;
     border-radius: 25px;
     width: 100%;
     position: absolute;

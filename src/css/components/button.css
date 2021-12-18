@@ -1,0 +1,33 @@
+.extra__button-redirection-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extra__button-redirection {
+    text-decoration: none;
+    font-family: 'Alata', sans-serif;
+    font-weight: normal;
+    font-size: var(--menu-hamb-3-and-start);
+
+    padding: 15px 150px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 25px;
+}
+
+
+/*
+.homepage__link {
+    
+    text-decoration: none;
+    font-family: 'Alata', sans-serif;
+    font-weight: normal;
+    font-size: var(--footer-and-desc-accueil);
+    
+    padding: 12px 70px;
+    margin-bottom: 3vh;
+    background: var(--white);
+    border-radius: 25px;
+}
+*/

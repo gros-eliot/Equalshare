@@ -9,25 +9,44 @@
 </head>
 
 <body>
-    <header> 
-        <a href="/"><img src="assets/icones/Equalshare.svg" alt="Equalshare"></a>
-        <a href="javascript:history.back()"><img src="assets/icones/icon_back.svg" alt="Flèche retour"></a>
-        <span></span>
-        <nav>
-            <ul>
-                <li><a href="article1.html">Écoféminisme, féminisme écologique</a></li>
-                <li><a href="article2.html">Pornographie et féminisme</a></li>
-                <li><a href="article3.html">Contre-culture confiture</a></li>
-                <li><a href="frise.html">Frise</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="glossaire.html">Glossaire</a></li>
-                <li><a href="a_propos_contact.html">À propos & Contact</a></li>
-                <li><a href="autres_projets.html">Autres projets</a></li>
-                <li><img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé"></li>
-                <li><a href="/"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé"></a></li>
-            </ul>
-        </nav>
-    </header>   
+    <!-- id='backhome' pour retourner en haut de la page-->
+    <div id="backhome" class="back__target"></div>
+
+    <!--header de la page-->
+    <header class="headerpage container"> 
+        <div class="header__logo">
+            <a href="/"><img src="assets/icones/Equalshare.svg" alt="Equalshare"></a>
+        </div>
+
+        <div class="headerpage__end">
+            <div class="headerpage__back">
+                <a href="javascript:history.back()"><img src="assets/icones/icon_back.svg" alt="Flèche retour"></a>
+            </div>
+
+
+            <div class="headerpage__menu">
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    x-on:click="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
+
+                <nav  class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                    <img src="assets/icones/Equalshare.svg" alt="Logo Equalshare du menu hamburger" class="menu__img">
+                    <ul class="menu__list listUnstyled">
+                        <li class="menu__item"><a href="article1.html" class="menu__link">Écoféminisme, féminisme écologique</a></li>
+                        <li class="menu__item"><a href="article2.html" class="menu__link">Pornographie et féminisme</a></li>
+                        <li class="menu__item"><a href="article3.html" class="menu__link">Contre-culture confiture</a></li>
+                        <li class="menu__item"><a href="frise.html" class="menu__link__2">Frise</a></li>
+                        <li class="menu__item"><a href="galerie.html" class="menu__link__2">Galerie</a></li>
+                        <li class="menu__item"><a href="glossaire.html" class="menu__link__3">Glossaire</a></li>
+                        <li class="menu__item"><a href="a_propos_contact.html" class="menu__link__3">À propos & Contact</a></li>
+                        <li class="menu__item"><a href="autres_projets.html" class="menu__link__3">Autres projets</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
 
     <main id="backhome">

@@ -7,7 +7,7 @@ l'écran*/
   }
 
   figcaption {
-    color: var(--grey-text);
+    color: var(--grey);
     font-size: var(--description-article);
     text-align: center;
   }

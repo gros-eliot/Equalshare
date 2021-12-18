@@ -72,11 +72,6 @@
     transition: background-color 200ms ease-in-out;
 }
 
-.homepage__link:hover {
-    color : var(--white);
-    transition: color 200ms ease-in;
-}
-
 /*Fond de la desc et du bouton card*/
 .card__bg {
     border-radius: 0px 0px 25px 25px;

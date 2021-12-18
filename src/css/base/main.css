@@ -6,6 +6,11 @@
 
 /* GENERALITES POLICES ET COULEUR */
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {  
     background: linear-gradient(#ff74f1, #5aa7ee, #ffa69c, #ffbe73, #7effd8);
     font-family: 'ABeeZee', sans-serif;
@@ -21,13 +26,8 @@ h1, h2, h3 {
 
 /* padding et marges */
 h1, h2, h3, p {
-    padding-left: 5%;
-    padding-right: 5%;
-}
- 
-h3, p {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 /*liens (généraux)*/

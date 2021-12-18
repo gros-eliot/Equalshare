@@ -26,9 +26,9 @@
 }
 
 /*animation haut de page*/
-/* EN CONSTRUCTION !!!!
-  .back__button__link:active {
-    transition: 1000ms ease-in-out;
+/*
+  a#backhome {
+     transition: all ease-in 0.2s;
   }
   */
 
@@ -61,13 +61,8 @@
     margin-top: 3vh;
     margin-bottom: 2vh;
   }
-/*animation langue*/
 
-.footerpage__lang-link:hover {
-  transform: rotate(360deg);
-  transition: transform 500ms ease-in-out;
-}
 /* taille des images (langues)*/
   .footer__lang-img {
-    width: 40px;
+    width: 7vh;
   }

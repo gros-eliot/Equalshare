@@ -1,0 +1,164 @@
+/*-----------------------*/
+/*-----------------------*/
+/*--------COMMUN---------*/
+/*-----------------------*/
+/*-----------------------*/
+
+/* contenu de l'article (titres et texte)*/ 
+.article__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5% 3% 5% 3%;
+}
+
+/*boîte "figure" pour centrer img+figcaption*/
+.article__figure {
+    display: flex;
+    justify-content: center;    
+    margin-bottom: -20px;
+}
+
+/*image d'un article*/
+
+.article__image-center {
+    display: flex;
+    justify-content: center;
+}
+.article__image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/*HERO*/
+.article__hero {
+    position:relative;
+    top: 0;
+    left: 0;
+}
+
+/* HERO : haut du héro (image + titre)*/
+.article__hero__top {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* HERO : temps de lecture*/
+.article__hero__time-div {
+    position: relative;
+}
+.article__hero__time {
+    color: var(--grey);
+    font-style: italic;
+    font-size: var(--description-article);
+}
+
+/*hero image*/
+.article__hero__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    filter: brightness(35%);
+}
+
+
+
+/*hero title*/
+.article__hero__title {
+    z-index:1;
+    margin-top: 50px;
+    margin-bottom: 7vh;
+    color: var(--white)
+}
+
+/*FIN DU HERO*/
+
+/*-----------------------*/
+/*---------FIN-----------*/
+/*--------COMMUN---------*/
+/*-----------------------*/
+/*-----------------------*/
+
+
+/*-----------------------*/
+/*-----------------------*/
+/*-------ARTICLE1--------*/
+/*-----------------------*/
+/*-----------------------*/
+
+/*couleur de fond*/
+.article__body {
+    background: var(--vert);
+}
+
+/*image 1 article 1*/
+.article__image-art1-1 {
+    width: 200px;
+    padding-left: 20%;
+}
+
+
+/*-----------------------*/
+/*-----------------------*/
+/*-------ARTICLE2--------*/
+/*-----------------------*/
+/*-----------------------*/
+
+/*couleur de fond*/
+.article__body2 {
+    background: var(--violet);
+}
+
+
+/*liste à puces dans l'article*/
+.article2__list {
+    padding-right: 10%;
+}
+
+/*images article 2*/
+.article__image-art2-1 {
+    width:200px;
+}
+
+.article__image-art2-2 {
+    width: 200px;
+    padding-bottom: 3%;
+}
+
+/*-----------------------*/
+/*-----------------------*/
+/*-------ARTICLE3--------*/
+/*-----------------------*/
+/*-----------------------*/
+
+.article__body3 {
+    background: var(--rouge);
+}
+.article__image-art3-1 {
+    width:250px;
+    padding-bottom: 2%;
+}
+.article__image-art3-2 {
+    width:200px;
+    padding-bottom: 2%;
+}
+
+.article__hero__image3 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 49%;
+    object-fit: cover;
+    filter: brightness(35%);
+}

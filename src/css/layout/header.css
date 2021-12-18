@@ -13,12 +13,23 @@
     align-items: center;
 }
 
+.headerpage__end {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+.header__logo {
+    margin-top: 1vh;
+    margin-left: 1vw;
+}
+
 .header__menu-btn {
     top: -0.5vw;
     margin-right: 4vw;
 }
 
-.header__logo {
-    margin-left: 2vw;
+.headerpage__back {
+    padding-top: 2px;
+    padding-right: 10px;
 }
-
