@@ -25,14 +25,6 @@
   padding-top: 10vh;
 }
 
-/*animation haut de page*/
-/*
-  a#backhome {
-     transition: all ease-in 0.2s;
-  }
-  */
-
-
 
 /* icones réseaux sociaux*/
 .footerpage__icon {
@@ -45,7 +37,6 @@
     width: 5vh;
     height: 5vh;
   }
-
           /* animation réseaux sociaux*/
 .footerpage__iconli:hover {
   filter: opacity(80%);

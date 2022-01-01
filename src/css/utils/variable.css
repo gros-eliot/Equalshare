@@ -17,11 +17,13 @@
 /* Text-size styles */
 
 --titre-accueil: 2.625rem;                  /*42px*/
---titre-accueil-extras: 3rem;                 /*48px*/
+--titre-accueil-extras: 3rem;               /*48px*/
 --titre-extras: 4rem;                       /*64px*/
 --menu-hamb-1-and-titre-art-acc: 1.875rem;  /*30px*/
 --menu-hamb-2: 1.625rem;                    /*26px*/
 --menu-hamb-3-and-start: 1.5rem;            /*24px*/
+--button-1: 1.5rem;                         /*24px*/
+--button-2: 1.25rem;                        /*20px*/
 --footer-and-desc-accueil: 1.125rem;        /*18px*/
 
 --titre-article: 2.25rem;                   /*36px*/

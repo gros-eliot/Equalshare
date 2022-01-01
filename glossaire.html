@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equalshare - Glossaire</title>
 </head>
 
-<body>
+<body class="glossary_bg">
     <!-- id='backhome' pour retourner en haut de la page-->
     <div id="backhome" class="back__target"></div>
 
@@ -51,19 +52,19 @@
 
     <main id="backhome">
         <div>
-           <h1>Glossaire sur le féminisme <br>
-            (A-Z)</h1>
+           <h1 class="extra__hero__name otherpages__name">Glossaire sur le féminisme</h1>
+           <p class="glossary__az">(A-Z)</p>
         </div>
 
         <div>
-            <p>~ A ~</p>
+            <p class="glossary__letter">~ A ~</p>
             <h3 id="anti_heroine"><strong>Anti-héroïne</strong></h3>
             <p>Personnage féminin central d'une histoire, d'un film ou d'un drame qui n'a pas les attributs héroïques conventionnels.</p>
 
             <h3 id="antigone"><strong>Antigone</strong></h3>
             <p>Le personnage principal d'une tragédie de Sophocle.</p>
 
-            <p>~ C ~</p>
+            <p class="glossary__letter">~ C ~</p>
             <h3 id="capitalisme"><strong>Capitalisme</strong></h3>
             <p>Système économique et politique dans lequel le commerce et l'industrie 
             d'un pays sont contrôlés par des propriétaires privés dans un but lucratif, plutôt que par l'État.</p>
@@ -74,35 +75,35 @@
             et devenu ensuite un point de ralliement pour de nombreux mouvements environnementaux 
             dans le monde entier.</p>
             
-            <p>~ F ~</p>
+            <p class="glossary__letter">~ F ~</p>
             <h3 id="feminisme_radical"><strong>Féminisme radical</strong></h3>
             <p>Une perspective au sein du féminisme qui appelle à une réorganisation radicale de la société dans laquelle la suprématie masculine est éliminée dans tous les contextes sociaux et économiques, tout en reconnaissant que les expériences des femmes sont également affectées 
             par d'autres divisions sociales telles que la race, la classe et l'orientation sexuelle.</p>
 
-            <p>~ G ~</p>
+            <p class="glossary__letter">~ G ~</p>
             <h3 id="gen_y"><strong>Génération Y</strong></h3>
             <p>Ce sont les personnes que l’on appelle “Millenials”. Le terme Millennials désigne généralement la génération des personnes nées entre le début des années 1980 et 1990.</p>
 
-            <p>~ H ~</p>
+            <p class="glossary__letter">~ H ~</p>
             <h3 id="hype_underground"><strong>Hype underground</strong></h3>
             <p>Un style musical proche des musiques du genre rap.</p>
 
-            <p>~ I ~</p>
+            <p class="glossary__letter">~ I ~</p>
             <h3 id="indie_rock"><strong>Indie rock (rock indépendant)</strong></h3>
             <p>C’est un genre de musique rock qui a vu le jour aux États-Unis et au Royaume-Uni dans les années 1970. Utilisé à l'origine pour décrire les maisons de disques indépendantes, le terme est devenu associé à la musique qu'elles produisaient et était initialement utilisé de manière interchangeable avec le rock alternatif ou le “rock pop à guitares”.</p>
 
             <h3 id="ismene"><strong>Ismène (sœur d’Antigone)</strong></h3>
             <p>Ce personnage provient de l’œuvre “Antigone” de Sophocle. Elle représente les forces de la loi et des conventions humaines. Antigone, au contraire, est ouvertement prête à défier Créon (son oncle) afin de faire ce qui est juste par tout ce qui est juste et saint.</p>
 
-            <p>~ M ~</p>
+            <p class="glossary__letter">~ M ~</p>
             <h3 id="misandrie"><strong>Misandrie (misandre)</strong></h3>
             <p>Détestation, mépris ou préjugé invétéré à l'égard des hommes.</p>
 
-            <p>~ O ~</p>
+            <p class="glossary__letter">~ O ~</p>
             <h3 id="ogm"><strong>OGM</strong></h3>
             <p>Un organisme génétiquement modifié est un organisme dont le matériel génétique a été modifié à l'aide de techniques de génie génétique.</p>
 
-            <p>~ P ~</p>
+            <p class="glossary__letter">~ P ~</p>
             <h3 id="patriarcat"><strong>Patriarcat</strong></h3>
             <p>Système de société ou de gouvernement dans lequel le père ou l'homme le plus âgé est le chef de la famille et la descendance est calculée à travers la ligne masculine.</p>
 
@@ -115,48 +116,44 @@
             <h3 id="pro_sexe"><strong>Féministe pro-sexe</strong></h3>
             <p>Mouvement féministe centré sur l'idée que la liberté sexuelle est une composante essentielle de la liberté des femmes.</p>
 
-            <p>~ Q ~</p>
+            <p class="glossary__letter">~ Q ~</p>
             <h3 id="quartier_chaud"><strong>Quartier chaud</strong></h3>
             <p>Partie d'une zone urbaine où l'on trouve une concentration de prostitution et de commerces à caractère sexuel, tels que les sex-shops, les clubs de strip-tease et les théâtres pour adultes.</p>
 
-            <p>~ S ~</p>
+            <p class="glossary__letter">~ S ~</p>
             <h3 id="seropositif"><strong>Séropositif</strong></h3>
             <p>Avoir un résultat positif à un test sanguin pour le virus du SIDA, le VIH.</p>
 
             <h3 id="sex_wars"><strong>Sex Wars</strong></h3>
             <p>Les guerres sexuelles féministes, également connues sous le nom de “guerres sexuelles lesbiennes”, ou simplement “guerres sexuelles” ou “guerres pornographiques”, sont des termes utilisés pour désigner les débats collectifs entre féministes concernant des questions liées à la sexualité.</p>
         </div>
-       <a href="#backhome"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
        
+        <!--footer de la page-->
+
+        <div class="back__button">
+            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
+        </div>
+
     </main>
     
-    <footer>
+    <footer class="footerpage container">
 
-        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com">eliot.gpro@gmail.com</a></p>
-        <ul>
-            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/">
-                Facebook
-                <i class="iconFacebook">
-            </i></a></li>
+        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
 
-            <li><a href="https://www.instagram.com/equalshare_mmi/">
-                Instagram
-                <i class="iconInstagram">
-            </i></a></li>
-
-            <li><a href="https://twitter.com/equalshare_mmi">
-                Twitter
-                <i class="iconTwitter">
-                </i></a></li>
-
-            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/">
-                Linkedin
-                    <i class="iconLinkedin">
-                    </i></a></li>
-                
+        <ul class="footer__list listUnstyled footerpage__icon">
+            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
+            <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
         </ul>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département 
-            <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <br>
+            <a href="http://mmimontbeliard.com/" class="footer__link">MMi de Montbéliard</a></p>
+
+        <div class="footerpage__lang">
+            <img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé" class="footer__lang-img">
+            <a href="/" class="footerpage__lang-link"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="footer__lang-img"></a>
+        </div>
     </footer>
 </body>
 </html>

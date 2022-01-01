@@ -40,8 +40,3 @@
     display: flex;
     justify-content: center;
 }
-
-.hero__start__button:hover {
-    filter:invert(100%);
-    transition: filter 200ms ease-in-out;
-}

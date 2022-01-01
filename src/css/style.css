@@ -15,9 +15,12 @@
 @import url(layout/header.css);
 @import url(layout/footer.css);
 @import url(layout/article.css);
+@import url(layout/timeline.css);
+@import url(layout/glossary.css);
 
 /* components */
 @import url(components/hero.css);
+@import url(components/extrahero.css);
 @import url(components/card.css);
 @import url(components/form.css);
 @import url(components/menu.css);
