@@ -1,0 +1,25 @@
+.otherpages__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 0px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: var(--titre-extras);
+    color: var(--white);
+}
+
+.cloud_background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+.otherpages__bg {
+    background: var(--bleu);
+}

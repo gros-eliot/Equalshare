@@ -4,15 +4,6 @@
     height: 100%;
 }
 
-.otherpages__name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 48px;
-    margin-bottom: 0px;
-    font-weight: bold;
-}
-
 .glossary__az {
     text-align: center;
     display: flex;
@@ -34,7 +25,7 @@
     font-weight: bold;
     margin-top: 60px;
 }
-
+/*
 #anti_heroine, #antigone, #capitalisme, #chipko, #feminisme_radical, #gen_y, #hype_underground, #indie_rock, #ismene, #misandrie, #ogm, #patriarcat, #pop_porn, #pornographie, #pro_sexe, #quartier_chaud, #seropositif, #sex_wars {
-    padding-top: 10%;
-}
+    padding-top: normal;
+}*/

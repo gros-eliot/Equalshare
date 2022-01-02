@@ -9,7 +9,7 @@
     <title>Equalshare - à propos et contact</title>
 </head>
 <!-- Validé par W3C-->
-<body>
+<body class="otherpages__bg">
     <!-- id='backhome' pour retourner en haut de la page-->
     <div id="backhome" class="back__target"></div>
 
@@ -50,8 +50,9 @@
     </header>
 
     <main>
+        <img src="assets/img/cloud_bg.svg" alt="Décor nuageux" class="cloud_background cloud_background_about">
         <div>
-            <h1>À propos</h1>
+            <h1 class="otherpages__name">À propos</h1>
             <h2>Concepteur du site</h2>
                 <p>
                 Eliot Gros – MMI Montbéliard 1e année<br>
@@ -70,29 +71,35 @@
             
             <h2>Réseaux sociaux</h2>
                 <p>Suivez-moi également sur les réseaux sociaux !</p>
-                <a href = "#scroll"><img src="assets/icones/icon_scroll_1.svg" alt="Bouton pour scroller"></a>
+                <ul class="listUnstyled footerpage__icon">
+                    <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
+                    <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
+                    <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
+                    <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
+                </ul>
 
 
             </div>
 
-        <div>
-            <h1>CONTACT</h1>
-            <h2>
+        <div class="contact">
+            <h1 class="otherpages__name">Contact</h1>
+            <h2 class="contact__tagline">
                 Une remarque ? Posez-la ici !
             </h2>
             <form>
-                <label for="name">Prénom</label><br>
+                <label for="name">Prénom*</label><br>
                 <input type="text" name="name" id="name" required>
                 <br>
-                <label for="lastname">Nom</label><br>
+                <label for="lastname">Nom*</label><br>
                 <input type="text" name="lastname" id="lastname" required>
                 <br>
-                <label for="mail">Mail</label><br>
+                <label for="mail">Mail*</label><br>
                 <input type="email" name="mail" id="mail" required>
                 <br>
-                <label for="message">Message</label><br>
+                <label for="message">Message*</label><br>
                 <textarea id="message" required></textarea>
                 <br>
+                <p class="required_mention"><i>*obligatoire</i></p>
                 <button type="submit">OK !</button>
             </form>
         </div>
@@ -105,11 +112,11 @@
 
     </main>
         
-    <footer class="footerpage container">
+    <footer class="footerpage container" id="scroll">
 
         <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
 
-        <ul class="footer__list listUnstyled footerpage__icon">
+        <ul class="listUnstyled footerpage__icon">
             <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
             <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
             <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
