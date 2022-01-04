@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equalshare - à propos et contact</title>
 </head>
-<!-- Validé par W3C-->
+
 <body class="otherpages__bg">
     <!-- id='backhome' pour retourner en haut de la page-->
     <div id="backhome" class="back__target"></div>
@@ -71,11 +71,11 @@
             
             <h2>Réseaux sociaux</h2>
                 <p>Suivez-moi également sur les réseaux sociaux !</p>
-                <ul class="listUnstyled footerpage__icon">
-                    <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
-                    <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
-                    <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
-                    <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
+                <ul class="listUnstyled social__about">
+                    <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="social__aboutli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="social__aboutli"></a></li>
+                    <li><a href="https://www.instagram.com/equalshare_mmi/" class="social__aboutli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="social__aboutli"></a></li>
+                    <li><a href="https://twitter.com/equalshare_mmi" class="social__aboutli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="social__aboutli"></a></li>
+                    <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="social__aboutli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="social__aboutli"></a></li>
                 </ul>
 
 
@@ -87,20 +87,24 @@
                 Une remarque ? Posez-la ici !
             </h2>
             <form>
-                <label for="name">Prénom*</label><br>
-                <input type="text" name="name" id="name" required>
+                <label for="name" class="contact__subhead">Prénom*</label><br>
+                <input type="text" name="name" id="name" class="contact__input" required>
                 <br>
-                <label for="lastname">Nom*</label><br>
-                <input type="text" name="lastname" id="lastname" required>
+
+                <label for="lastname" class="contact__subhead">Nom*</label><br>
+                <input type="text" name="lastname" id="lastname" class="contact__input" required>
                 <br>
-                <label for="mail">Mail*</label><br>
-                <input type="email" name="mail" id="mail" required>
+
+                <label for="mail" class="contact__subhead">Mail*</label><br>
+                <input type="email" name="mail" id="mail" class="contact__input" required>
                 <br>
-                <label for="message">Message*</label><br>
-                <textarea id="message" required></textarea>
+
+                <label for="message" class="contact__subhead">Message*</label><br>
+                <textarea id="message" class="contact__textarea" required></textarea>
                 <br>
+
                 <p class="required_mention"><i>*obligatoire</i></p>
-                <button type="submit">OK !</button>
+                <div class="contact__button-div"><button type="submit" class="contact__button">Envoyer</button></div>
             </form>
         </div>
     

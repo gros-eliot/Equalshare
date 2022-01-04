@@ -1,10 +1,23 @@
+.social__about {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.social__aboutli {
+    width: 6vh;
+    height: 6vh;
+}
+
+.social__aboutli:hover {
+    filter: opacity(80%);
+    transform: rotate(360deg);
+    transition: transform 500ms ease-out;
+}
 
 .cloud_background_about {
     top:100px;
 }
-
-
-
 
 .contact {
     display: flex;
@@ -13,10 +26,35 @@
     justify-content: center;
 }
 
-
-
-
 .contact_tagline {
-    text-align: center;
-    
+    text-align: center;    
+}
+
+.contact__input, .contact__textarea {
+    width: 350px;
+}
+
+.contact__textarea {
+    height: 120px;
+}
+
+.contact__subhead {
+    margin-left: 2%;
+}
+
+.required_mention {
+    margin-top: -2%;
+    font-size: var(--description-article);
+}
+.contact__button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact__button {
+    font-weight: bold;
+    font-size: var(--button-2);
+    background: var(--white);
+    padding: 5% 30% 5% 30%;
+    border-radius: 30px;
 }

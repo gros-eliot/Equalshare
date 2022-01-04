@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equalshare - Autres projets</title>
 </head>
-<!-- Validé par W3C-->
-<body>
+
+<body class="otherpages__bg">
     <!-- id='backhome' pour retourner en haut de la page-->
     <div id="backhome" class="back__target"></div>
 
@@ -50,82 +51,144 @@
 
 
     <main>
-        <div>
-            <h1>PROJETS</h1>
-            <p>Voici d’autres projets réalisés au sein du groupe B1, par des collègues.
-                <br>
-                Consultez-les ! </p>
+        <img src="assets/img/cloud_bg.svg" alt="Décor nuageux" class="cloud_background cloud_background_about">
+        
+        <h1 class="otherpages__name">PROJETS</h1>
+        <p>Voici d’autres projets réalisés au sein du groupe B1, par des collègues.</p>
+        <p>Consultez-les !</p>
+        
+        <div class="projects"> 
             
-            <div>
-                <h2>Gender Education</h2>
-                <h3>Allan HIENNE</h3>
+            <a href="" class="projects__link">
+            <div class="projects-div">
+                <div class="left-title projects-title1">
+                    <h2>Equality</h2>
+                </div>
+                <div class="projects__name-left">
+                    <h3 class="projects__name">Maxime GOLFIER</h3>
+                </div>
             </div>
+            </a>
 
-            <div>
-                <h2>F for Feminism</h2>
-                <h3>Quentin HEINIS</h3>
+            <a href="https://f-for-feminism.heinis-corp.fr/" class="projects__link">
+            <div class="projects-div">
+                <div class="right-title projects-title2">
+                    <h2>F for Feminism</h2>
+                </div>
+                <div  class="projects__name-right">
+                    <h3 class="projects__name">Quentin HEINIS</h3>
+                </div>
             </div>
+            </a>
 
-            <div>
-                <h2>Equality</h2>
-                <h3>Maxime GOLFIER</h3>
+            <a href="" class="projects__link">
+            <div class="projects-div">
+                <div class="left-title projects-title3">   
+                    <h2>Femusic</h2>
+                </div>
+                <div class="projects__name-left">
+                    <h3 class="projects__name">Antonin HEUGUET</h3>
+                </div>
             </div>
+            </a>
 
-            <div>
-                <h2>Femin’Art</h2>
-                <h3>Titouan JOURY</h3>
+            <a href="" class="projects__link">
+            <div class="projects-div">
+                <div class="right-title projects-title4">
+                    <h2>Gender Education</h2>
+                </div>
+                <div class="projects__name-right">
+                    <h3 class="projects__name">Allan HIENNE</h3>
+                </div>
             </div>
+            </a>
 
-            <div>
-                <h2>Japaminism</h2>
-                <h3>Alicia IVERSENC</h3>
-            </div>
 
-            <div>
-                <h2>Actus Egypte Fem</h2>
-                <h3>Héléna JAEGLE</h3>
+            <a href="" class="projects__link">
+            <div class="projects-div">
+                <div class="left-title projects-title1">
+                    <h2>Femin’Art</h2>
+                </div>
+                <div class="projects__name-left">
+                    <h3 class="projects__name">Titouan JOURY</h3>
+                </div>
             </div>
+            </a>
+        
 
-            <div>
-                <h2>Herta</h2>
-                <h3>Fabio GAFFORELLI</h3>
+            <a href="https://japaminism.iversenc.fr/" class="projects__link">
+            <div class="projects-div">
+                <div class="right-title projects-title2">
+                    <h2>Japaminism</h2>
+                </div>
+                <div class="projects__name-right">
+                    <h3 class="projects__name">Alicia IVERSENC</h3>
+                </div>
             </div>
-            
-            <div>
-                <h2>Femusic</h2>
-                <h3>Antonin HEUGUET</h3>
+            </a>
+
+
+            <a href="" class="projects__link">
+            <div class="projects-div">
+                <div class="left-title projects-title3">
+                    <h2>Actus Egypte Fem</h2>
+                </div>
+                <div class="projects__name-left">
+                    <h3 class="projects__name">Héléna JAEGLE</h3>
+                </div>
             </div>
+            </a>
+
+
+            <a href="http://hertha.fabiogafforelli.fr/" class="projects__link">
+            <div class="projects-div">
+                <div class="right-title projects-title4">
+                    <h2>Hertha</h2>
+                </div>
+                <div class="projects__name-right">
+                    <h3 class="projects__name">Fabio GAFFORELLI</h3>
+                </div>
+            </div>
+            </a>
+
+            <a href="https://icon.matthieuhoareau.fr/" class="projects__link">
+            <div class="projects-div">
+                <div class="left-title projects-title1">
+                    <h2>Icon</h2>
+                </div>
+                <div class="projects__name-left">
+                    <h3 class="projects__name">Matthieu HOAREAU</h3>
+                </div>
+            </div>
+            </a>
+
+        </div>
+        <!--footer de la page-->
+
+        <div class="back__button">
+            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
         </div>
 
-        <a href="#backhome"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
     </main>
-    <footer>
+        
+    <footer class="footerpage container" id="scroll">
 
-        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com">eliot.gpro@gmail.com</a></p>
-        <ul>
-            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/">
-                Facebook
-                <i class="iconFacebook">
-            </i></a></li>
+        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
 
-            <li><a href="https://www.instagram.com/equalshare_mmi/">
-                Instagram
-                <i class="iconInstagram">
-            </i></a></li>
-
-            <li><a href="https://twitter.com/equalshare_mmi">
-                Twitter
-                <i class="iconTwitter">
-                </i></a></li>
-
-            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/">
-                Linkedin
-                    <i class="iconLinkedin">
-                    </i></a></li>
-                
+        <ul class="listUnstyled footerpage__icon">
+            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
+            <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
         </ul>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département 
-            <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <br>
+            <a href="http://mmimontbeliard.com/" class="footer__link">MMi de Montbéliard</a></p>
+
+        <div class="footerpage__lang">
+            <img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé" class="footer__lang-img">
+            <a href="/" class="footerpage__lang-link"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="footer__lang-img"></a>
+        </div>
     </footer>
 </body>
 </html>
