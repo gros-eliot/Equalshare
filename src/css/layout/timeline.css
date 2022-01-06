@@ -13,12 +13,7 @@
     position: absolute;
     max-width: 100%;
     z-index: -2;
-    margin-top: 2650px;
-}
-
-.frise strong {
-    color: var(--bleu);
-    font-weight: bold;
+    margin-top: 3550px;
 }
 
 #scroll-extra {
@@ -32,13 +27,124 @@
     justify-content: center;
     align-items: center;
 }
-.frise__contenu__date {
-    display: flex;
-    flex-direction: column;
-}
+
+
 .frise__circle-btn {
     background-color: var(--white);
     width: 50px;
     height:50px;
     border-radius: 90px;
+
+    margin: 0 80px 0 80px;
+}
+
+
+
+/*----DETAILS (visionneuse)---*/
+.frise__legende-subtitle, .frise__legende-title {
+    font-family: 'Alata', sans-serif;
+}
+.frise__legende-subtitle{
+    font-size: var(--sous-titre-article);
+    color: var(--grey);
+}
+
+.frise__legende-title{
+    font-size: var(--titre-extras);
+    padding: 0;
+    margin: 0;
+}
+
+.frise__legende-button {
+    padding: 10px 30px 10px 30px;
+    background-color: var(--white);
+    border-radius: 25px;
+    margin-top:0;
+}
+
+
+.frise__visionneuse {
+    width: 100%;
+    overflow: visible;
+}
+
+.frise__legende1, .frise__legende2,
+.frise__legende3, .frise__legende4,
+.frise__legende5, .frise__legende6,
+.frise__legende7 {
+	position: relative;
+    opacity: 0;
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+	color: var(--black);
+	background-color: var(--light-grey);
+	top:0;
+    left: 0;
+	z-index: 2;
+}
+
+.frise__date1, .frise__date2,
+.frise__date3, .frise__date4,
+.frise__date5, .frise__date6,
+.frise__date7 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.frise__date1 {
+    margin-top: -265px;
+    margin-left: 100px;
+}
+
+.frise__date2 {
+    margin-top: -255px;
+    margin-left: 90px;
+}
+
+.frise__date3 {
+    margin-top: -190px;
+    margin-left: 70px;
+}
+
+.frise__date4 {
+    margin-top: -565px;
+    margin-left: 70px;
+}
+
+.frise__date5 {
+    margin-top: -495px;
+    margin-left: 70px;
+}
+
+.frise__date6 {
+    margin-top: -285px;
+    margin-left: 35px;
+}
+
+.frise__date7 {
+    margin-top: -565px;
+    margin-left: 140px;
+}
+
+/* mot en gras: couleur bleu*/
+.frise strong {
+    color: var(--important-name);
+}
+
+/*liste dans les détails de la date*/
+.frise__legende-list {
+    text-align: left;
+}
+
+/*padding des descriptions de date*/
+.frise__date-caption {
+    padding-right: 30%;
 }
