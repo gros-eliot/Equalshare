@@ -1,4 +1,19 @@
 
+.extrahero {
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../assets/img/frise_fond.webp);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-bottom: 80%;
+}
+
+
 /*fond de la page EXTRA*/
 .extra__bg {
     background: var(--grey);
@@ -12,8 +27,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    margin-top: 10%;
+    margin-top: 100px;
 
     font-weight:100;
     color: var(--white);
@@ -28,6 +42,7 @@
 }
 
 /*image extra*/
+/*
 .extra__hero__img {
     top: 0;
     left: 0;
@@ -36,8 +51,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(50%);
-}
+}*/
 
 /*bouton scroll extra*/
 .extra__hero__button {

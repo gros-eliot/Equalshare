@@ -1,3 +1,44 @@
 .frise__contenu {
     position: relative;
 }
+
+.frise__image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30%;
+}
+
+.frise__image {
+    position: absolute;
+    max-width: 100%;
+    z-index: -2;
+    margin-top: 2650px;
+}
+
+.frise strong {
+    color: var(--bleu);
+    font-weight: bold;
+}
+
+#scroll-extra {
+    position: absolute;
+    margin-top: -27%;
+}
+
+.frise__contenu__date-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.frise__contenu__date {
+    display: flex;
+    flex-direction: column;
+}
+.frise__circle-btn {
+    background-color: var(--white);
+    width: 50px;
+    height:50px;
+    border-radius: 90px;
+}
