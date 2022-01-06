@@ -12,7 +12,7 @@
     color: var(--white);
 }
 
-.cloud_background {
+.cloud_background2 {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -23,3 +23,10 @@
 .otherpages__bg {
     background: var(--bleu);
 }
+
+.cloud_background {
+    background-image: url(../../../assets/img/cloud_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 00px;
+  }

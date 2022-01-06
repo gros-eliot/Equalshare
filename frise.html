@@ -51,6 +51,7 @@
 
 
     <main class="frise">
+
         <div class="extrahero">
             <div class="extra__hero">
                 <h1 class="extra__hero__name">Frise</h1>
@@ -67,24 +68,25 @@
             <img src="assets/img/ligne_conductrice.webp" alt="Ligne conductrice de la frise" class="frise__image">
         </div>
             <div class="frise__contenu__date-div">
-                <div class="frise__circle-btn"></div>
+                <div class="frise__contenu__details">
+                    <div x-on:mouseover="montrerFrise1();"
+                    x-on:mouseleave="cacherFrise1();">
+                            <div class="frise__circle-btn"></div>
+                    </div>
+                        <h2>L’histoire de l’écoféminisme</h2>
+                        <h3>Années 70</h3>
+                        <p><strong>Françoise d'Eaubonne</strong> publie son livre « féminisme ou la mort ». 
+    
+                            Cela contribue à la formation de l'écoféminisme en 
+                            dénonçant le patriarcat et le capitalisme.</p>
+                        <p>OK !</p>
+                </div>
                 <div class="frise__contenu__date">
                     <h2>Années 70</h2>
                     <h3>Françoise d’Eaubonne</h3>
                 </div>
             </div>
 
-            <div class="frise__contenu__details">
-                <nav>
-                    <h2>L’histoire de l’écoféminisme</h2>
-                    <h3>Années 70</h3>
-                    <p><strong>Françoise d'Eaubonne</strong> publie son livre « féminisme ou la mort ». 
-
-                        Cela contribue à la formation de l'écoféminisme en 
-                        dénonçant le patriarcat et le capitalisme.</p>
-                    <p>OK !</p>
-                </nav>
-            </div>
 
             <h2>1973</h2>
             <h3>Mouvement Chipko</h3>
