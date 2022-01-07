@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equalshare -Galerie</title>
 </head>
 <!-- Validé par W3C-->
-<body>
+<body class="extra__bg">
     <!-- id='backhome' pour retourner en haut de la page-->
     <div id="backhome" class="back__target"></div>
 
@@ -48,32 +49,46 @@
         </div>
     </header>
 
-    <main>
-        <div>
-            <h1>Galerie</h1>
-            <h2>Les visages du féminisme</h2>
-            <p>Vous trouverez sur cette page des portraits de féministe par catégorie ! </p>
-            <a href = "#scroll"><img src="assets/icones/icon_scroll_1.svg" alt="Bouton pour scroller"></a>
-            <img src="assets/img/galerie_fond.webp" alt="Fond galerie">
+    <main class="galerie">
+
+        <div class="extrahero extrahero-galerie">
+            <div class="extra__hero">
+                <h1 class="extra__hero__name">Galerie</h1>
+                <h2 class="extra__hero__title">Les visages du féminisme</h2>
+                <p class="extra__hero__desc">Vous trouverez sur cette page des portraits de féministe par catégorie ! </p>
+                <a href = "#scroll-extra"><img src="assets/icones/icon_scroll_1.svg" alt="Bouton pour scroller" class="extra__hero__button"></a>
+            </div>
         </div>
 
-        <div id="scroll">
-            <section>
-                <h2>Les grandes figures françaises</h2>
-                <img src="assets/img/galerie/france.svg" alt="carte de France">
-                <div>
-                    <h2>Olympe de Gouges</h2>
+        <div id='scroll-extra'></div>
+        <div>
+
+            <div class="gallery__heading-div">
+                <div class="gallery__heading-img">
+                    <img src="assets/img/galerie/france.svg" alt="carte de France" class="gallery__heading-img">
+                </div>
+                <h2 class="gallery__heading">Les <strong>grandes figures</strong> françaises</h2>
+            </div>
+
+
+            <section class="gallery__grandes_figures_bg">
+                <div class="gallery__grandes_figures_div">
+                    <h2 class="gallery__grandes_figures_name">Olympe de Gouges</h2>
                     <figure>
-                        <img src="assets/img/galerie/Olympe_de_Gouges.webp" alt="Olympe de Gouges (portrait)">
+                        <div class="gallery__grandes_figures_portraits">
+                            <img src="assets/img/galerie/Olympe_de_Gouges.webp" alt="Olympe de Gouges (portrait)">
+                        </div>
                         <figcaption>Née en 1748 et décédée en 1793.</figcaption>
                     </figure>
                     <p>Femme de lettres française. Elle est ensuite femme politique et écrit la Déclaration des droits de la femme et de la citoyenne, en 1791. Elle se bat également pour le droit de vote des femmes. </p>
                 </div>
 
-                <div>
-                    <h2>Simone de Beauvoir</h2>
+                <div class="gallery__grandes_figures_div">
+                    <h2 class="gallery__grandes_figures_name">Simone de Beauvoir</h2>
                     <figure>
-                        <img src="assets/img/galerie/Simone_de_Beauvoir.webp" alt="Simone de Beauvoir (portrait)">
+                        <div class="gallery__grandes_figures_portraits">
+                            <img src="assets/img/galerie/Simone_de_Beauvoir.webp" alt="Simone de Beauvoir (portrait)">
+                        </div>
                         <figcaption>Née en 1908 et décédée en 1986.</figcaption>
                     </figure>
                     <p>Théoricienne et philosophe majeure du féminisme. Elle se fait connaître grâce à son livre «Le Deuxième Sexe» publié en 1949.
@@ -81,10 +96,12 @@
                         Simone de Beauvoir a participé au mouvement de libération des femmes dans les années 1970.</p>
                 </div>
 
-                <div>
-                    <h2>Simone Veil</h2>
+                <div class="gallery__grandes_figures_div">
+                    <h2 class="gallery__grandes_figures_name">Simone Veil</h2>
                     <figure>
-                        <img src="assets/img/galerie/Simone_Veil.webp" alt="Simone Veil (portrait)">
+                        <div class="gallery__grandes_figures_portraits">
+                            <img src="assets/img/galerie/Simone_Veil.webp" alt="Simone Veil (portrait)">
+                        </div>
                         <figcaption>Née en 1927 et décédée en 2017.</figcaption>
                     </figure>
                     <p>Elle est ministre de la Santé sous la présidence de Valéry Giscard d'Estaing. 
@@ -94,109 +111,132 @@
                  </div>
             </section>
 
-            <section>
-                <h2>Figures internationales par catégorie</h2>
-                <img src="assets/img/galerie/internationale.svg" alt="logo représentant le monde">
+            <!--Fin premiere section-->
+            <!--Début premiere section-->
+            <div class="gallery__heading-div">
+                <div class="gallery__heading-img">
+                    <img src="assets/img/galerie/internationale.svg" alt="logo représentant le monde">
+                </div>
+                <h2 class="gallery__heading">Figures internationales <strong>par catégorie</strong></h2>
+            </div>
 
-                <div>
+
+
+            <section>
+                <div class="gallery__international-div-1">
                     <h2>Écologie</h2>
                     <h3>Vandana Shiva</h3>
-                    <img src="assets/img/galerie/Vandana_Shiva.webp" alt="Vandana Shiva (portrait)">
-                    <p>Inde - Née en 1952.</p>
-                    <p>Grande figure de l'écoféminisme.</p>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Vandana_Shiva.webp" alt="Vandana Shiva (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>Inde - Née en 1952.</i></p>
+                    <p class="gallery__international__caption">Grande figure de l'écoféminisme.</p>
                 </div>
             
-                <div>
+                <div class="gallery__international-div-2">
                     <h2>Éducation</h2>
                     <h3>Angela Davis</h3>
-                    <img src="assets/img/galerie/Angela_Davis.webp" alt="Angela Davis (portrait)">
-                    <p>États-Unis - Née en 1952.</p>
-                    <p>Militante féministe et communiste, elle défend les droits de l’Homme.</p>
-                    <p>Elle est également écrivaine et professeure de philosophie.</p>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Angela_Davis.webp" alt="Angela Davis (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>États-Unis - Née en 1952.</i></p>
+                    <p class="gallery__international__caption">Militante féministe et communiste, elle défend les droits de l’Homme.</p>
+                    <p class="gallery__international__caption">Elle est également écrivaine et professeure de philosophie.</p>
                 </div>
 
-                <div>
+                <div class="gallery__international-div-3">
                     <h2>Sport</h2>
                     <h3>Clarisse Agbégnénou</h3>
-                    <img src="assets/img/galerie/Clarisse_Agbegnenou.webp" alt="Clarisse Agbégnénou (portrait)">
-                    <p>France - Née en 1992.</p>
-                    <p>Judoka française ayant participé aux Jeux Olympiques d’été de 2020. </p>
-                    <p>Elle remporte deux médailles d’or.</p>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Clarisse_Agbegnenou.webp" alt="Clarisse Agbégnénou (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>France - Née en 1992.</i></p>
+                    <p class="gallery__international__caption">Judoka française ayant participé aux Jeux Olympiques d’été de 2020. </p>
+                    <p class="gallery__international__caption">Elle remporte deux médailles d’or.</p>
                 </div>
 
-                <div>
+                <div class="gallery__international-div-4">
                     <h2>Art</h2>
                     <h3>Marina Abramović</h3>
-                    <img src="assets/img/galerie/Marina_Abramovic.webp" alt="Marina Abramović (portrait)">
-                    <p>Serbie - Née en 1946.</p>
-                    <p>C’est une artiste qui fait partie du courant artistique de l’art corporel. On peut la définir comme féministe.</p>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Marina_Abramovic.webp" alt="Marina Abramović (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>Serbie - Née en 1946.</i></p>
+                    <p class="gallery__international__caption">C’est une artiste qui fait partie du courant artistique de l’art corporel. On peut la définir comme féministe.</p>
                 </div>
 
-                <div>
+                <div class="gallery__international-div-1">
                     <h2>Science</h2>
                     <h3>June Almeida</h3>
-                    <img src="assets/img/galerie/June_Almeida.webp" alt="June Almeida (portrait)">
-                    <p>Royaume-Uni - Née en 1930 et décédée en 2007.</p>
-                    <p>Elle découvre et élabore grâce à une technique ingénieuse en microscopie électronique la première description d’un coronavirus.</p>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/June_Almeida.webp" alt="June Almeida (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>Royaume-Uni - Née en 1930 et décédée en 2007.</i></p>
+                    <p class="gallery__international__caption">Elle découvre et élabore grâce à une technique ingénieuse en microscopie électronique la première description d’un coronavirus.</p>
                 </div>
 
-                <div>
+                <div class="gallery__international-div-2">
                     <h2>Médecine</h2>
                     <h3>Helen Taussig</h3>
-                    <img src="assets/img/galerie/Helen_taussig.webp" alt="Helen Taussig (portrait)">
-                    <p>États-Unis - Née en 1898 et décédée en 1986.</p>
-                    <p>Grande pédiatre américaine, elle réussit à guérir la tétralogie de Fallot (maladie de l’enfant bleue) chez les nourrissons.</p>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Helen_taussig.webp" alt="Helen Taussig (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>États-Unis - Née en 1898 et décédée en 1986.</i></p>
+                    <p class="gallery__international__caption">Grande pédiatre américaine, elle réussit à guérir la tétralogie de Fallot (maladie de l’enfant bleue) chez les nourrissons.</p>
                 </div>
 
-                <div>
+                <div class="gallery__international-div-3">
                     <h2>Politique</h2>
                     <h3>Alexandria Ocasio-Cortez</h3>
-                    <img src="assets/img/galerie/AOC.webp" alt="Alexandria Ocasio-Cortez (portrait)">
-                    <p>États-Unis - Née en 1989.</p>
-                    <p>Représentante des Etats-Unis depuis 2019. Grande figure nationale et internationale, très active sur Twitter notamment.</p>
+                    <div class="gallery__international-portrait">
+                        <img src="assets/img/galerie/AOC.webp" alt="Alexandria Ocasio-Cortez (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>États-Unis - Née en 1989.</i></p>
+                    <p class="gallery__international__caption">Représentante des Etats-Unis depuis 2019. Grande figure nationale et internationale, très active sur Twitter notamment.</p>
                 </div>
 
-                <div>
+                <div class="gallery__international-div-4">
                     <h2>Juridique</h2>
                     <h3>Gisèle Halimi</h3>
-                    <img src="assets/img/galerie/Gisele_Halimi.webp" alt="Gisèle Halimi (portrait)">
-                    <p>Tunisie / France - Née en 1927 et décédée en 2020.</p>
-                    <p>Tunisienne d’origine, Gisèle Halimi a travaillé en France en tant qu’avocate. Elle est également militante féministe.</p>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Gisele_Halimi.webp" alt="Gisèle Halimi (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>Tunisie / France - Née en 1927 et décédée en 2020.</i></p>
+                    <p class="gallery__international__caption">Tunisienne d’origine, Gisèle Halimi a travaillé en France en tant qu’avocate. Elle est également militante féministe.</p>
                 </div>
             </section>
         </div>
+        <div class="extra__button-redirection-div gallery__frise-btn">
+            <a href="frise.html" class="extra__button-redirection-frise">Frise</a>
+        </div>
+        
+ <!--footer de la page-->
 
-        <a href="frise.html">Frise</a>
-        <a href="#backhome"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
+        <div class="back__button">
+            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
+        </div>
+
+
     </main>
 
-    <footer>
+    <footer class="footerpage container">
 
-        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com">eliot.gpro@gmail.com</a></p>
-        <ul>
-            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/">
-                Facebook
-                <i class="iconFacebook">
-            </i></a></li>
+        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
 
-            <li><a href="https://www.instagram.com/equalshare_mmi/">
-                Instagram
-                <i class="iconInstagram">
-            </i></a></li>
-
-            <li><a href="https://twitter.com/equalshare_mmi">
-                Twitter
-                <i class="iconTwitter">
-                </i></a></li>
-
-            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/">
-                Linkedin
-                    <i class="iconLinkedin">
-                    </i></a></li>
-                
+        <ul class="listUnstyled footerpage__icon">
+            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
+            <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
         </ul>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département 
-            <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a></p>
+
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <br>
+        <a href="http://mmimontbeliard.com/" class="footer__link">MMi de Montbéliard</a></p>
+
+        <div class="footerpage__lang">
+        <img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé" class="footer__lang-img">
+        <a href="/" class="footerpage__lang-link"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="footer__lang-img"></a>
+        </div>
     </footer>
 </body>
 </html>

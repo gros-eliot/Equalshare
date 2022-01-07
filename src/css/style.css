@@ -20,6 +20,7 @@
 @import url(layout/about.css);
 @import url(layout/otherpages.css);
 @import url(layout/projects.css);
+@import url(layout/gallery.css);
 
 /* components */
 @import url(components/hero.css);

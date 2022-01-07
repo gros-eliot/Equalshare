@@ -21,6 +21,9 @@
     padding: 13.5px 150px;
     border-radius: 37px;
 }
+.gallery__frise-btn {
+    margin-top: 15%;
+}
 
 .extra__button-redirection-article1 {
     font-size: var(--button-2);
