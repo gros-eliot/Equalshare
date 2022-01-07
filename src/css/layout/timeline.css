@@ -149,3 +149,7 @@
 .frise__date-caption {
     padding-right: 30%;
 }
+
+.frise__legende-caption {
+    text-align: left;
+}
