@@ -36,32 +36,3 @@
     padding: 13.5px 137px;
     border-radius: 37px;
 }
-
-
-/* BOUTON DES CARD (homepage): cf card.css (ici, c'est juste pour le consulter plus rapidement)
-
-.homepage__link__div {
-    display: flex;
-    justify-content: center;
-}
-
-.homepage__link {
-
-    Contenu
-    text-decoration: none;
-    font-family: 'Alata', sans-serif;
-    font-weight: normal;
-    font-size: var(--footer-and-desc-accueil);
-
-    Fond du bouton
-    padding: 12px 70px;
-    margin-bottom: 3vh;
-    background: var(--white);
-    border-radius: 25px;
-}
-
-.homepage__link:hover {
-    background-color: var(--bleu);
-    transition: background-color 200ms ease-in-out;
-}
-*/
