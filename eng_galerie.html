@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 <head>
     <link rel='stylesheet' href='src/css/style.css'>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equalshare -Galerie</title>
+    <title>Equalshare - Gallery</title>
 </head>
 <!-- Validé par W3C-->
 <body class="extra__bg">
@@ -19,6 +19,12 @@
             <a href="eng_index.html"><img src="assets/icones/Equalshare.svg" alt="Equalshare"></a>
         </div>
     
+        <div class="headerpage__end">
+            <div class="headerpage__back">
+                <a href="javascript:history.back()"><img src="assets/icones/icon_back.svg" alt="Back button"></a>
+            </div>
+
+            
         <div class="headerpage__menu">
             <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 x-on:click="menuIsOpen = !menuIsOpen" 
