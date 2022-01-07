@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalshare -Galerie</title>
+</head>
+<!-- Validé par W3C-->
+<body class="extra__bg">
+    <!-- id='backhome' pour retourner en haut de la page-->
+    <div id="backhome" class="back__target"></div>
+
+    <!--header de la page-->
+    <header class="headerpage container"> 
+        <div class="header__logo">
+            <a href="eng_index.html"><img src="assets/icones/Equalshare.svg" alt="Equalshare"></a>
+        </div>
+    
+        <div class="headerpage__menu">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                x-on:click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav  class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <img src="assets/icones/Equalshare.svg" alt="Equalshare's logo in hamburger menu" class="menu__img">
+                <ul class="menu__list listUnstyled">
+                    <li class="menu__item"><a href="eng_article1.html" class="menu__link">Ecofeminism, ecological feminism</a></li>
+                    <li class="menu__item"><a href="eng_article2.html" class="menu__link">Pornography and feminism</a></li>
+                    <li class="menu__item"><a href="eng_article3.html" class="menu__link">"Contre-culture confiture"</a></li>
+                    <li class="menu__item"><a href="eng_frise.html" class="menu__link__2">Timeline</a></li>
+                    <li class="menu__item"><a href="eng_galerie.html" class="menu__link__2">Gallery</a></li>
+                    <li class="menu__item"><a href="eng_glossaire.html" class="menu__link__3">Glossary</a></li>
+                    <li class="menu__item"><a href="eng_a_propos_contact.html" class="menu__link__3">About & Contact us</a></li>
+                    <li class="menu__item"><a href="eng_autres_projets.html" class="menu__link__3">Other projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="galerie">
+
+        <div class="extrahero extrahero-galerie">
+            <div class="extra__hero">
+                <h1 class="extra__hero__name">Gallery</h1>
+                <h2 class="extra__hero__title">The figures of feminism</h2>
+                <p class="extra__hero__desc">You will find on this page portraits of feminists by category!</p>
+                <a href = "#scroll-extra"><img src="assets/icones/icon_scroll_1.svg" alt="Scroll button" class="extra__hero__button"></a>
+            </div>
+        </div>
+
+        <div id='scroll-extra'></div>
+        <div>
+
+            <div class="gallery__heading-div">
+                <div class="gallery__heading-img">
+                    <img src="assets/img/galerie/france.svg" alt="France's map" class="gallery__heading-img">
+                </div>
+                <h2 class="gallery__heading">The <strong>great french</strong> feminists</h2>
+            </div>
+
+
+            <section class="gallery__grandes_figures_bg">
+                <div class="gallery__grandes_figures_div">
+                    <h2 class="gallery__grandes_figures_name">Olympe de Gouges</h2>
+                    <figure>
+                        <div class="gallery__grandes_figures_portraits">
+                            <img src="assets/img/galerie/Olympe_de_Gouges.webp" alt="Olympe de Gouges (portrait)">
+                        </div>
+                        <figcaption>born in 1748 and died in 1793.</figcaption>
+                    </figure>
+                    <p>French woman of letters. She became politician and wrote the Declaration of the Rights of Women and Citizens in 1791. She also 
+                        fought for the right to vote for women.</p>
+                </div>
+
+                <div class="gallery__grandes_figures_div">
+                    <h2 class="gallery__grandes_figures_name">Simone de Beauvoir</h2>
+                    <figure>
+                        <div class="gallery__grandes_figures_portraits">
+                            <img src="assets/img/galerie/Simone_de_Beauvoir.webp" alt="Simone de Beauvoir (portrait)">
+                        </div>
+                        <figcaption>Born in 1908 and died in 1986.</figcaption>
+                    </figure>
+                    <p>A major feminist theorist and philosopher. She became known for her book "The Second Sex" published in 1949. Simone de Beauvoir 
+                        participated in the women's liberation movement in the 1970s.</p>
+                </div>
+
+                <div class="gallery__grandes_figures_div">
+                    <h2 class="gallery__grandes_figures_name">Simone Veil</h2>
+                    <figure>
+                        <div class="gallery__grandes_figures_portraits">
+                            <img src="assets/img/galerie/Simone_Veil.webp" alt="Simone Veil (portrait)">
+                        </div>
+                        <figcaption>Born in 1927 and died in 2017.</figcaption>
+                    </figure>
+                    <p>She was health Minister under President Valéry Giscard d'Estaing. She allowed the publication of the law of January 17 in 1975 (Veil 
+                        law), relating to the voluntary interruption of pregnancy, so which allowing a decriminalization of abortion in France. 
+                        </p>
+                 </div>
+            </section>
+
+            <!--Fin premiere section-->
+            <!--Début premiere section-->
+            <div class="gallery__heading-div">
+                <div class="gallery__heading-img">
+                    <img src="assets/img/galerie/internationale.svg" alt="World's logo">
+                </div>
+                <h2 class="gallery__heading">International figures <strong>by category</strong></h2>
+            </div>
+
+
+
+            <section>
+                <div class="gallery__international-div-1">
+                    <h2>Ecology</h2>
+                    <h3>Vandana Shiva</h3>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Vandana_Shiva.webp" alt="Vandana Shiva (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>India - born in 1952.</i></p>
+                    <p class="gallery__international__caption">Great figure of ecofeminism.</p>
+                </div>
+            
+                <div class="gallery__international-div-2">
+                    <h2>Education</h2>
+                    <h3>Angela Davis</h3>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Angela_Davis.webp" alt="Angela Davis (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>USA - born in 1944.</i></p>
+                    <p class="gallery__international__caption">Feminist and communist activist, she defends human rights.</p>
+                    <p class="gallery__international__caption">She is also a writer and philosophy professor.</p>
+                </div>
+
+                <div class="gallery__international-div-3">
+                    <h2>Sport</h2>
+                    <h3>Clarisse Agbégnénou</h3>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Clarisse_Agbegnenou.webp" alt="Clarisse Agbégnénou (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>France - born in 1992.</i></p>
+                    <p class="gallery__international__caption">French judoka who participated in the 2020 Summer Olympics. </p>
+                    <p class="gallery__international__caption">She won two gold medals.</p>
+                </div>
+
+                <div class="gallery__international-div-4">
+                    <h2>Art</h2>
+                    <h3>Marina Abramović</h3>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Marina_Abramovic.webp" alt="Marina Abramović (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>Serbia - born in 1946.</i></p>
+                    <p class="gallery__international__caption">She is an artist who is part of the body art movement. 
+                        She can be defined as a feminist.</p>
+                </div>
+
+                <div class="gallery__international-div-1">
+                    <h2>Science</h2>
+                    <h3>June Almeida</h3>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/June_Almeida.webp" alt="June Almeida (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>United Kingdom - born in 1930 and died in 2007.</i></p>
+                    <p class="gallery__international__caption">She discovered and developed the first description of a coronavirus through an ingenious electron microscopy technique.</p>
+                </div>
+
+                <div class="gallery__international-div-2">
+                    <h2>Medecine</h2>
+                    <h3>Helen Taussig</h3>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Helen_taussig.webp" alt="Helen Taussig (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>USA - born in 1898 and died in 1986.</i></p>
+                    <p class="gallery__international__caption">Great American pediatrician, she succeeded 
+                        in curing the tetralogy of Fallot (blue child disease) in infants.</p>
+                </div>
+
+                <div class="gallery__international-div-3">
+                    <h2>Politics</h2>
+                    <h3>Alexandria Ocasio-Cortez</h3>
+                    <div class="gallery__international-portrait">
+                        <img src="assets/img/galerie/AOC.webp" alt="Alexandria Ocasio-Cortez (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>USA - born in 1989.</i></p>
+                    <p class="gallery__international__caption">United States Representative since 2019. Great national and international figure, very active on Twitter in particular.</p>
+                </div>
+
+                <div class="gallery__international-div-4">
+                    <h2>Legal</h2>
+                    <h3>Gisèle Halimi</h3>
+                    <div class="gallery__portraits">
+                        <img src="assets/img/galerie/Gisele_Halimi.webp" alt="Gisèle Halimi (portrait)">
+                    </div>
+                    <p class="gallery__international__birth"><i>Tunisia / France - born in 1927 and died in 2020.</i></p>
+                    <p class="gallery__international__caption">Tunisian of origin, Gisèle Halimi worked in France as a lawyer. She was also a feminist activist.</p>
+                </div>
+            </section>
+        </div>
+        <div class="extra__button-redirection-div gallery__frise-btn">
+            <a href="eng_frise.html" class="extra__button-redirection-frise-english">Timeline</a>
+        </div>
+        
+        <!--footer de la page-->
+
+        <div class="back__button">
+            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Go to top button"></a>
+        </div>
+
+    </main>
+    
+    <footer class="footerpage container">
+
+        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
+
+        <ul class="listUnstyled footerpage__icon">
+            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
+            <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
+        </ul>
+
+        <p>Project realized within the framework of a pedagogical exercise in the <br>
+            <a href="http://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></p>
+
+        <div class="footerpage__lang">
+            <a href="galerie.html" class="footerpage__lang-link">
+                <img src="assets/icones/Drapeau_fr.svg" alt="French disabled" class="footer__lang-img">
+            </a>
+            <img src="assets/icones/Dreapeau_ang_selec.svg" alt="English enabled" class="footer__lang-img">
+        </div>
+    </footer>
+</body>
+</html>
