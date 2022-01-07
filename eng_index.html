@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalshare - Home</title>
+</head>
+
+<body>
+    <!-- id='backhome' pour retourner en haut de la page-->
+    <div id="backhome" class="back__target"></div>
+
+    <!--header de la page-->
+    <header class="headerpage container"> 
+        <div class="header__logo">
+            <a href="eng_index.html"><img src="assets/icones/Equalshare.svg" alt="Equalshare"></a>
+        </div>
+    
+        <div class="headerpage__menu">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                x-on:click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav  class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <img src="assets/icones/Equalshare.svg" alt="Equalshare's logo in hamburger menu" class="menu__img">
+                <ul class="menu__list listUnstyled">
+                    <li class="menu__item"><a href="eng_article1.html" class="menu__link">Ecofeminism, ecological feminism</a></li>
+                    <li class="menu__item"><a href="eng_article2.html" class="menu__link">Pornography and feminism</a></li>
+                    <li class="menu__item"><a href="eng_article3.html" class="menu__link">"Contre-culture confiture"</a></li>
+                    <li class="menu__item"><a href="eng_frise.html" class="menu__link__2">Timeline</a></li>
+                    <li class="menu__item"><a href="eng_galerie.html" class="menu__link__2">Gallery</a></li>
+                    <li class="menu__item"><a href="eng_glossaire.html" class="menu__link__3">Glossary</a></li>
+                    <li class="menu__item"><a href="eng_a_propos_contact.html" class="menu__link__3">About & Contact us</a></li>
+                    <li class="menu__item"><a href="eng_autres_projets.html" class="menu__link__3">Other projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--hero de la page-->
+        <div class="hero">
+            <div class="hero__img">
+                <img src="assets/img/cloud.svg" alt="cloud">
+            </div>
+            <h1 class="hero__title">Let’s share equality.</h1>
+            <div class="hero__desc">
+                <p>Those great figures have radically changed cultures and way of thinking that make women considered equal to men.</p>
+                <p>Find out feminism’s struggles through articles and stories in different forms.</p>
+            </div>   
+            <div class="hero__start">
+                <p class="hero__start">Start !</p>
+                <a href="#article" class="hero__start__button">
+                    <img src="assets/icones/icon_scroll_1.svg" alt="Scroll button of homepage">
+                </a>
+            </div>
+        </div>
+
+        <!--articles à lire-->
+        <div id="article" class="articles-card">
+            <article class="card">
+                <img src="assets/img/art1-hp.webp" alt="ecofeminist march" class="card__img">
+                <h2 class="card__title">
+                    Ecofeminism : the ecological feminist movement.
+                </h2>
+                <div class="card__bg">
+                    <h3 class="card__desc">
+                        Ecological feminism (or ecofeminism) is an increasingly popular philosophical 
+                        trend of the 1970s. Discover its history.
+                    </h3>
+                    <div class="homepage__link__div">
+                        <a href="eng_article1.html" class="homepage__link">More... </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/img/art2-hp.webp" alt="portrait Andrea Dworkin" class="card__img">
+                <h2 class="card__title">
+                    Pornography and feminism: the fight of Andrea Dworkin
+                </h2>
+                <div class="card__bg">
+                    <h3 class="card__desc">
+                        With the aim of ending pornography and the humiliation of women, 
+                        Andrea Dworkin fought throughout her life. Here is his biography.
+                    </h3>
+                    <div class="homepage__link__div">
+                        <a href="eng_article2.html" class="homepage__link">More... </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="assets/img/art3-hp.webp" alt="Ismène de Beauvoir's book front cover" class="card__img">
+                <h2 class="card__title">
+                    "Contre-culture confiture" : the chronicles of Agathe Parmentier
+                </h2>
+                <div class="card__bg">
+                    <h3 class="card__desc">
+                        Agathe Parmentier (Ismène de Beauvoir) published in 2013 a collection of columns that 
+                        she calls "Contre-culture confiture". Discover it here.
+                    </h3>
+                    <div class="homepage__link__div">
+                        <a href="eng_article3.html" class="homepage__link">More... </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!--extras (galerie, frise, vidéo)-->
+        <div> 
+            <article class="extra">
+                <img src="assets/img/frise_hp.webp" alt="World's map for timeline decoration" class="extra__img">
+                <h2 class="extra__title">Timeline</h2>
+                <h3 class="extra__desc">Discover an interactive timeline about ecofeminism.</h3>
+                <div class="homepage__link__div">
+                    <a href="eng_frise.html" class="homepage__link">Discover</a>
+                </div>
+            </article>
+
+            <article class="extra">
+                <img src="assets/img/galerie_hp.webp" alt="Photography of a gallery" class="extra__img">
+                <h2 class="extra__title">Gallery</h2>
+                <h3 class="extra__desc">Discover French and international feminist figures.</h3>
+                <div class="homepage__link__div">
+                    <a href="eng_galerie.html" class="homepage__link">Discover</a>
+                </div>
+            </article>
+
+            <article>
+                <h2>Titre_video</h2>
+                <video controls src=""></video>
+                <p>Description vidéo</p>
+            </article>
+        </div>
+
+        <!--footer de la page-->
+
+        <div class="back__button">
+            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Go to top button"></a>
+        </div>
+
+    </main>
+    
+    <footer class="footerpage container">
+
+        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
+
+        <ul class="listUnstyled footerpage__icon">
+            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
+            <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
+        </ul>
+
+        <p>Project realized within the framework of a pedagogical exercise in the <br>
+            <a href="http://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></p>
+
+        <div class="footerpage__lang">
+            <a href="index.html" class="footerpage__lang-link">
+                <img src="assets/icones/Drapeau_fr.svg" alt="French disabled" class="footer__lang-img">
+            </a>
+            <img src="assets/icones/Dreapeau_ang_selec.svg" alt="English enabled" class="footer__lang-img">
+        </div>
+    </footer>
+</body>
+</html>

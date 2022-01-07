@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<head>
+    <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equalshare - Glossaire</title>
+</head>
+
+<body class="glossary_bg">
+    <!-- id='backhome' pour retourner en haut de la page-->
+    <div id="backhome" class="back__target"></div>
+
+    <!--header de la page-->
+    <header class="headerpage container"> 
+        <div class="header__logo">
+            <a href="eng_index.html"><img src="assets/icones/Equalshare.svg" alt="Equalshare"></a>
+        </div>
+    
+        <div class="headerpage__menu">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                x-on:click="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav  class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <img src="assets/icones/Equalshare.svg" alt="Equalshare's logo in hamburger menu" class="menu__img">
+                <ul class="menu__list listUnstyled">
+                    <li class="menu__item"><a href="eng_article1.html" class="menu__link">Ecofeminism, ecological feminism</a></li>
+                    <li class="menu__item"><a href="eng_article2.html" class="menu__link">Pornography and feminism</a></li>
+                    <li class="menu__item"><a href="eng_article3.html" class="menu__link">"Contre-culture confiture"</a></li>
+                    <li class="menu__item"><a href="eng_frise.html" class="menu__link__2">Timeline</a></li>
+                    <li class="menu__item"><a href="eng_galerie.html" class="menu__link__2">Gallery</a></li>
+                    <li class="menu__item"><a href="eng_glossaire.html" class="menu__link__3">Glossary</a></li>
+                    <li class="menu__item"><a href="eng_a_propos_contact.html" class="menu__link__3">About & Contact us</a></li>
+                    <li class="menu__item"><a href="eng_autres_projets.html" class="menu__link__3">Other projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <img src="assets/img/cloud_bg.svg" alt="Cloudy decoration" class="cloud_background2">
+        <div>
+           <h1 class="otherpages__name">Glossary about feminism</h1>
+           <p class="glossary__az">(A-Z)</p>
+        </div>
+
+        <div>
+            <p class="glossary__letter">~ A ~</p>
+            <h3 id="anti_heroine"><strong>Anti-heroine</strong></h3>
+            <p>A female central character in a story, film, or drama who have not conventional heroic attributes.</p>
+
+            <h3 id="antigone"><strong>Antigone</strong></h3>
+            <p>The main character of a tragedy by Sophocles.</p>
+
+
+
+            <p class="glossary__letter">~ C ~</p>
+            <h3 id="capitalisme"><strong>Capitalism</strong></h3>
+            <p>An economic and political system in which a country's trade and industry are controlled by private owners for profit, rather 
+                than by the state.</p>
+
+            <h3 id="chipko"><strong>Chipko (movement)</strong></h3>
+            <p>It’s a forest conservation movement in India. The movement originated in 1973 at the Himalayan region of 
+                Uttarakhand (then part of Uttar Pradesh) and became a rallying point for many future environmental movements all over the world.
+                </p>
+
+
+
+            <p class="glossary__letter">~ G ~</p>
+            <h3 id="gen_y"><strong>Generation Y</strong></h3>
+            <p>People named « Millenials ». The term Millennials generally refers to the generation of people born between the early 
+                1980s and 1990s.</p>
+
+            <h3 id="ogm"><strong>GMO</strong></h3>
+            <p>A genetically modified organism. It is any organism whose genetic material has been altered using genetic engineering 
+                techniques.</p>
+
+
+
+            <p class="glossary__letter">~ H ~</p>
+            <h3 id="hype_underground"><strong>Hype underground</strong></h3>
+            <p>A musical style, near to rap songs.</p>
+
+            <h3 id="seropositif"><strong>HIV positive</strong></h3>
+            <p>To have a positive result in a blood test for the AIDS virus HIV.</p>
+
+
+            <p class="glossary__letter">~ I ~</p>
+            <h3 id="indie_rock"><strong>Indie rock</strong></h3>
+            <p> Indie rock is a genre of rock music that originated in the United States and United Kingdom in the 1970s. 
+                Originally used to describe independent record labels, the term became associated with the music they produced and was 
+                initially used interchangeably with alternative rock or "guitar pop rock".</p>
+
+            <h3 id="ismene"><strong>Ismène (Antigone’s sister)</strong></h3>
+            <p> A character from Antigone by Sophocles. She represents the forces of human law and 
+                convention. Antigone, by contrast, is openly prepared to fight Creon in order to do what's right by all that's just and holy.</p>
+
+
+
+            <p class="glossary__letter">~ M ~</p>
+            <h3 id="misandrie"><strong>Misandry, misandrist</strong></h3>
+            <p>Dislike of, contempt for, or ingrained prejudice against men.</p>
+
+
+
+            <p class="glossary__letter">~ P ~</p>
+            <h3 id="patriarcat"><strong>Patriarchies</strong></h3>
+            <p>A system of society or government in which the father or eldest male is head of the family and descent is based 
+                on the male line.</p>
+
+            <h3 id="pop_porn"><strong>Pop-porn</strong></h3>
+            <p>A neologism from Ismène de Beauvoir (in his book « Contre-culture confiture »).</p>
+
+            <h3 id="pornographie"><strong>Pornography</strong></h3>
+            <p>Visual material containing the explicit description or display of sexual organs or activity, intended to stimulate
+                sexual excitement.</p>
+
+            <h3 id="pro_sexe"><strong>Pro-sex feminists (sex-positive feminism)</strong></h3>
+            <p>It’s a feminist movement centering on the idea that sexual freedom is an 
+                essential component of women's freedom.</p>
+
+
+
+            <p class="glossary__letter">~ R ~</p>
+            <h3 id="feminisme_radical"><strong>Radical feminism</strong></h3>
+            <p> A perspective within feminism that calls for a radical reordering of society in which male supremacy is 
+                eliminated in all social and economic contexts, while recognizing that women's experiences are also affected by other social 
+                divisions such as in race, class, and sexual orientation.
+                </p>
+
+            <h3 id="quartier_chaud"><strong>Red-light district</strong></h3>
+            <p>A part of an urban area where a concentration of prostitution and sex-oriented businesses, such as sex 
+                shops, strip clubs, and adult theaters, are found.</p>
+
+
+
+            <p class="glossary__letter">~ S ~</p>
+            <h3 id="sex_wars"><strong>Sex Wars</strong></h3>
+            <p>The feminist sex wars, also known as the « lesbian sex wars », or simply the « sex wars » or « porn wars », are 
+                terms used to refer to collective debates amongst feminists regarding some issues related to sexuality</p>
+        </div>
+       
+        <!--footer de la page-->
+
+        <div class="back__button">
+            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Go to top button"></a>
+        </div>
+
+    </main>
+    
+    <footer class="footerpage container">
+
+        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
+
+        <ul class="listUnstyled footerpage__icon">
+            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
+            <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
+            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
+        </ul>
+
+        <p>Project realized within the framework of a pedagogical exercise in the <br>
+            <a href="http://mmimontbeliard.com/" class="footer__link">MMi department of Montbéliard</a></p>
+
+        <div class="footerpage__lang">
+            <a href="glossaire.html" class="footerpage__lang-link">
+                <img src="assets/icones/Drapeau_fr.svg" alt="French disabled" class="footer__lang-img">
+            </a>
+            <img src="assets/icones/Dreapeau_ang_selec.svg" alt="English enabled" class="footer__lang-img">
+        </div>
+    </footer>
+</body>
+</html>
