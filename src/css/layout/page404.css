@@ -12,7 +12,7 @@
 .error404__cogs {
     position:absolute;
     width:300px;
-    filter:opacity(8%);
+    filter:opacity(10%);
 }
 
 .error404__subheading {
@@ -50,7 +50,7 @@
     font-size: var(--menu-hamb-3-and-start);
 
     background-color: var(--white);
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 50px;
     margin: 10px;
     padding: 3% 5% 3% 5%;
 }
