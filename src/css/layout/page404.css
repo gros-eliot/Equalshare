@@ -1,0 +1,62 @@
+.error404__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 5% 2% 5%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.error404__cogs {
+    position:absolute;
+    width:300px;
+    filter:opacity(8%);
+}
+
+.error404__subheading {
+    padding-top: 50px;
+}
+.error404__form {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.error404__input {
+    font-style: italic;
+    padding: 2% 17% 2% 3%;
+    margin: -2%;
+}
+
+.error404__button {
+    padding: 2% 5% 2% 5%;
+    background-color: var(--white);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.error404__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error404__list__item{
+    padding: 20px 2% 20px 2%;
+    font-family: 'Alata', sans-serif;
+    font-size: var(--menu-hamb-3-and-start);
+
+    background-color: var(--white);
+    border-radius: 10px 10px 10px 10px;
+    margin: 10px;
+    padding: 3% 5% 3% 5%;
+}
+
+
+.error404__list__link {
+    font-weight: 100;
+    text-decoration: none;
+}

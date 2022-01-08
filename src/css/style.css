@@ -14,14 +14,18 @@
 /* Layout */
 @import url(layout/header.css);
 @import url(layout/footer.css);
+
 @import url(layout/article.css);
-@import url(layout/timeline.css);
+
+@import url(layout/otherpages.css);
 @import url(layout/glossary.css);
 @import url(layout/about.css);
-@import url(layout/otherpages.css);
 @import url(layout/projects.css);
+
+@import url(layout/timeline.css);
 @import url(layout/gallery.css);
 
+@import url(layout/page404.css);
 /* components */
 @import url(components/hero.css);
 @import url(components/extrahero.css);

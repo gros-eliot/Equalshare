@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equalshare - À propos | Contact</title>
+    <title>Equalshare - Error 404</title>
 </head>
 
-<body class="otherpages__bg cloud_background">
+<body>
     <!-- id='backhome' pour retourner en haut de la page-->
     <div id="backhome" class="back__target"></div>
 
@@ -50,88 +50,64 @@
     </header>
 
     <main>
-        <div>
-            <h1 class="otherpages__name">À propos</h1>
-            <h2>Concepteur du site</h2>
-                <p>
-                Eliot Gros – MMI Montbéliard 1e année<br>
-                Téléphone : <a href="tel:06 95 02 09 81">06 95 02 09 81</a><br>
-                Adresse mail : <a href="mailto:eliot.gpro@gmail.com">eliot.gpro@gmail.com</a>
-                </p>
-            <h2>Description</h2>
-                <p>
-                    Salut ! Moi, c’est Eliot Gros. Je suis étudiant au BUT MMI Montbéliard en première année, et souhaite me spécialiser dans le design graphique.
-                </p><p>
-                Dans le cadre d’un projet individuel cette année (2021-2022), j’ai réalisé Equalshare, site web traitant du féminisme. 
-                Vous y trouverez des articles, une frise, une galerie, une vidéo et d’autres contenus.
-                </p><p>
-                En espérant que vous, visiteurs, appréciez consulter mon site web !
-                </p>
-            
-            <h2>Réseaux sociaux</h2>
-                <p>Suivez-moi également sur les réseaux sociaux !</p>
-                <ul class="listUnstyled social__about">
-                    <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="social__aboutli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="social__aboutli"></a></li>
-                    <li><a href="https://www.instagram.com/equalshare_mmi/" class="social__aboutli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="social__aboutli"></a></li>
-                    <li><a href="https://twitter.com/equalshare_mmi" class="social__aboutli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="social__aboutli"></a></li>
-                    <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="social__aboutli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="social__aboutli"></a></li>
-                </ul>
-
-
-            </div>
-
-        <div class="contact">
-            <h1 class="otherpages__name">Contact</h1>
-            <h2 class="contact__tagline">
-                Une remarque ? Écrivez-moi !
-            </h2>
-            <form>
-                <label for="name" class="contact__subhead">Prénom*</label><br>
-                <input type="text" name="name" id="name" class="contact__input" required>
-                <br>
-
-                <label for="lastname" class="contact__subhead">Nom*</label><br>
-                <input type="text" name="lastname" id="lastname" class="contact__input" required>
-                <br>
-
-                <label for="mail" class="contact__subhead">Mail*</label><br>
-                <input type="email" name="mail" id="mail" class="contact__input" required>
-                <br>
-
-                <label for="message" class="contact__subhead">Message*</label><br>
-                <textarea id="message" class="contact__textarea" required></textarea>
-                <br>
-
-                <p class="required_mention"><i>*obligatoire</i></p>
-                <div class="contact__button-div"><button type="submit" class="contact__button">Envoyer</button></div>
-            </form>
+        <div class="error404__title">
+            <h1>Erreur 404 Page non trouvée</h1>
+            <h2 class="error404__title2">Une erreur s'est produite.</h2>
+            <img src="assets/img/cogs.svg" alt="cogs" class="error404__cogs">
+            <p>La page recherchée ne se trouve pas à cette adresse, ou n'existe plus.</p>
         </div>
-    
+
+
+        <h3>Vous cherchez quelque chose ?</h3>
+        
+        <form action="https://google.com/" method="GET" 
+        x-data="{ q:'', }" 
+        x-on:submit="q = q + ' site:equalshare.eliotgros.fr'"
+        class="error404__form">
+
+            <input type="text" id="q" name="q" x-model="q" class="error404__input" placeholder="Tapez le texte ici...">
+
+            <button type="submit" class="error404__button">Rechercher</button>
+        </form>
+
+        <h3 class="error404__subheading">Les pages du site</h3>
+
+        <ul class="error404__list listUnstyled">
+            <li class="error404__list__item"><a href="article1.html" class="error404__list__link">Écoféminisme, féminisme écologique</a></li>
+            <li class="error404__list__item"><a href="article2.html" class="error404__list__link">Pornographie et féminisme</a></li>
+            <li class="error404__list__item"><a href="article3.html" class="error404__list__link">Contre-culture confiture</a></li>
+            <li class="error404__list__item"><a href="frise.html" class="error404__list__link">Frise</a></li>
+            <li class="error404__list__item"><a href="galerie.html" class="error404__list__link">Galerie</a></li>
+            <li class="error404__list__item"><a href="glossaire.html" class="error404__list__link">Glossaire</a></li>
+            <li class="error404__list__item"><a href="a_propos_contact.html" class="error404__list__link">À propos & Contact</a></li>
+            <li class="error404__list__item"><a href="autres_projets.html" class="error404__list__link">Autres projets</a></li>
+        </ul>
+
         <!--footer de la page-->
-
         <div class="back__button">
-            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
+           <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
         </div>
 
+    
     </main>
         
-    <footer class="footerpage container" id="scroll">
-
+    <footer class="footerpage container">
+    
         <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
-
+    
         <ul class="listUnstyled footerpage__icon">
             <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
             <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
             <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
             <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
         </ul>
-
+    
         <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <br>
             <a href="http://mmimontbeliard.com/" class="footer__link">MMi de Montbéliard</a></p>
-
+    
         <div class="footerpage__lang">
             <img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé" class="footer__lang-img">
-            <a href="eng_a_propos_contact.html" class="footerpage__lang-link"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="footer__lang-img"></a>
+            <a href="/" class="footerpage__lang-link"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="footer__lang-img"></a>
         </div>
     </footer>
 </body>
