@@ -1,9 +1,9 @@
 /* appliquer cette classe aux images devant prendre toute la place de
 l'écran*/
-.basic-image {
+video {
     max-width: 100%;
     height: auto;
-    padding: 0;
+    padding: 10px;
   }
 
   figcaption {
