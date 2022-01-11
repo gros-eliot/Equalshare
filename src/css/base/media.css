@@ -3,7 +3,15 @@ l'écran*/
 video {
     max-width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 5px;
+  }
+
+  .video__div {
+    padding: 20px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   figcaption {
