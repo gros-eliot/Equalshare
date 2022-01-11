@@ -68,207 +68,207 @@
         <div class="frise__contenu">
             <div class="frise__image-div">
                 <img src="assets/img/ligne_conductrice.webp" alt="Ligne conductrice de la frise" class="frise__image">
-            </div>
+            
 
-            <!--PREMIER BOUTON FRISE-->
+                <!--PREMIER BOUTON FRISE-->
+                    <div class="frise__contenu__date-div">
+                        <div class="frise__visionneuse">
+                            <div x-on:click="montrerFrise1();">
+                                <div class="frise__clickable">
+                                    <div class="frise__circle-btn"></div>
+                                    <div class="frise__date">
+                                        <h2>Années 70</h2>
+                                        <h3>Françoise d’Eaubonne</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="frise__legende1">
+                                <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
+                                <h3 class="frise__legende-title">Années 70</h3>
+                                <p class="frise__legende-caption"><strong>Françoise d'Eaubonne</strong> publie son livre « féminisme ou la mort ». 
+            
+                                    Cela contribue à la formation de l'écoféminisme en 
+                                    dénonçant le patriarcat et le capitalisme.</p>
+                                <p class="frise__legende-button"
+                                x-on:click="cacherFrise1();">OK !</p>
+                            </div>
+                        </div>
+                    </div>
+                <!--FIN PREMIER BOUTON FRISE-->
+
+                <!--DEUXIEME BOUTON FRISE-->
                 <div class="frise__contenu__date-div">
                     <div class="frise__visionneuse">
-                        <div x-on:click="montrerFrise1();">
+                        <div x-on:click="montrerFrise2();">
                             <div class="frise__clickable">
                                 <div class="frise__circle-btn"></div>
                                 <div class="frise__date">
-                                    <h2>Années 70</h2>
-                                    <h3>Françoise d’Eaubonne</h3>
+                                    <h2>1973</h2>
+                                    <h3>Mouvement Chipko</h3>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="frise__legende1">
+                        <div class="frise__legende2">
                             <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
-                            <h3 class="frise__legende-title">Années 70</h3>
-                            <p class="frise__legende-caption"><strong>Françoise d'Eaubonne</strong> publie son livre « féminisme ou la mort ». 
-        
-                                Cela contribue à la formation de l'écoféminisme en 
-                                dénonçant le patriarcat et le capitalisme.</p>
+                            <h3 class="frise__legende-title">1973</h3>
+                            <p class="frise__legende-caption"><strong>Mouvement Chipko.</strong>
+                                C’est un mouvement de conservation des forêts en Inde. </p>
+                                
+                            <p class="frise__legende-caption"><a href="glossaire.html/#chipko">En savoir plus...</a></p>
                             <p class="frise__legende-button"
-                            x-on:click="cacherFrise1();">OK !</p>
+                            x-on:click="cacherFrise2();">OK !</p>
                         </div>
                     </div>
                 </div>
-            <!--FIN PREMIER BOUTON FRISE-->
+                <!--FIN DEUXIEME BOUTON FRISE-->
 
-            <!--DEUXIEME BOUTON FRISE-->
-            <div class="frise__contenu__date-div">
-                <div class="frise__visionneuse">
-                    <div x-on:click="montrerFrise2();">
-                        <div class="frise__clickable">
-                            <div class="frise__circle-btn"></div>
-                            <div class="frise__date">
-                                <h2>1973</h2>
-                                <h3>Mouvement Chipko</h3>
+                <!--TROISIEME BOUTON FRISE-->
+                <div class="frise__contenu__date-div">
+                    <div class="frise__visionneuse">
+                        <div x-on:click="montrerFrise3();">
+                            <div class="frise__clickable">
+                                <div class="frise__circle-btn"></div>
+                                <div class="frise__date">
+                                    <h2>1979</h2>
+                                    <h3>Three Mile Island</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="frise__legende2">
-                        <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
-                        <h3 class="frise__legende-title">1973</h3>
-                        <p class="frise__legende-caption"><strong>Mouvement Chipko.</strong>
-                            C’est un mouvement de conservation des forêts en Inde. </p>
-                            
-                        <p class="frise__legende-caption"><a href="glossaire.html/#chipko">En savoir plus...</a></p>
-                        <p class="frise__legende-button"
-                        x-on:click="cacherFrise2();">OK !</p>
+                        <div class="frise__legende3">
+                            <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
+                            <h3 class="frise__legende-title">1979</h3>
+                            <p class="frise__legende-caption">Accident nucléaire de <strong>Three Mile Island.</strong></p>
+                            <p class="frise__legende-button"
+                            x-on:click="cacherFrise3();">OK !</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--FIN DEUXIEME BOUTON FRISE-->
+                <!--FIN TROISIEME BOUTON FRISE-->
 
-            <!--TROISIEME BOUTON FRISE-->
-            <div class="frise__contenu__date-div">
-                <div class="frise__visionneuse">
-                    <div x-on:click="montrerFrise3();">
-                        <div class="frise__clickable">
-                            <div class="frise__circle-btn"></div>
-                            <div class="frise__date">
-                                <h2>1979</h2>
-                                <h3>Three Mile Island</h3>
+
+                <!--QUATRIEME 4 BOUTON FRISE-->
+                <div class="frise__contenu__date-div">
+                    <div class="frise__visionneuse">
+                        <div x-on:click="montrerFrise4();">
+                            <div class="frise__clickable">
+                                <div class="frise__circle-btn"></div>
+                                <div class="frise__date">
+                                    <h2>1980</h2>
+                                    <h3>Pentagon Actions</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="frise__legende3">
-                        <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
-                        <h3 class="frise__legende-title">1979</h3>
-                        <p class="frise__legende-caption">Accident nucléaire de <strong>Three Mile Island.</strong></p>
-                        <p class="frise__legende-button"
-                        x-on:click="cacherFrise3();">OK !</p>
-                    </div>
-                </div>
-            </div>
-            <!--FIN TROISIEME BOUTON FRISE-->
-
-
-            <!--QUATRIEME 4 BOUTON FRISE-->
-            <div class="frise__contenu__date-div">
-                <div class="frise__visionneuse">
-                    <div x-on:click="montrerFrise4();">
-                        <div class="frise__clickable">
-                            <div class="frise__circle-btn"></div>
-                            <div class="frise__date">
-                                <h2>1980</h2>
-                                <h3>Pentagon Actions</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="frise__legende4">
-                        <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
-                        <h3 class="frise__legende-title">1980</h3>
-                        <p class="frise__legende-caption">Conférence intitulée « l'écoféminisme et la vie sur terre » aux États-Unis, après l’accident de Three Mile Island.</p>
-                        <h3 class="frise__legende-title">17/11/1980</h3>
-                        <p class="frise__legende-caption"><strong>Pentagon Actions</strong>. Deux mille femmes se réunissent autour du Pentagone pour réclamer :</p>
-                        <ul class="frise__legende-list">
-                            <li>l’égalité des droits,</li>
-                            <li>la fin des actions militaires menées par le gouvernement,</li>
-                            <li>la fin de l'exploitation des personnes et de l'environnement.</li>
-                        </ul>
-
-                        <p class="frise__legende-button"
-                        x-on:click="cacherFrise4();">OK !</p>
-                    </div>
-                </div>
-            </div>
-            <!--FIN QUATRIEME 4 BOUTON FRISE-->
-
-
-            <!--CINQUIEME 5 BOUTON FRISE-->
-            <div class="frise__contenu__date-div">
-                <div class="frise__visionneuse">
-                    <div x-on:click="montrerFrise5();">
-                        <div class="frise__clickable"><div class="frise__circle-btn"></div>
-                        <div class="frise__date">
-                            <h2>1990</h2>
-                            <h3>Karen J. Warren</h3>
-                        </div>
-                    </div>
-                            
-                    </div>
-
-                    <div class="frise__legende5">
-                        <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
-                        <h3 class="frise__legende-title">1990</h3>
-                        <p class="frise__legende-caption">Dans un article intitulé « Le pouvoir et la promesse du féminisme écologique », <strong>Karen J. Warren</strong> met en exergue les 
-                            apports et enrichissements croisés de l'écoféminisme, avec à la fois :</p>
+                        <div class="frise__legende4">
+                            <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
+                            <h3 class="frise__legende-title">1980</h3>
+                            <p class="frise__legende-caption">Conférence intitulée « l'écoféminisme et la vie sur terre » aux États-Unis, après l’accident de Three Mile Island.</p>
+                            <h3 class="frise__legende-title">17/11/1980</h3>
+                            <p class="frise__legende-caption"><strong>Pentagon Actions</strong>. Deux mille femmes se réunissent autour du Pentagone pour réclamer :</p>
                             <ul class="frise__legende-list">
-                                <li>une importance du féminisme pour l’éthique environnementale.</li>
-                                
-                                <li>une importance de l’environnementalisme pour le féminisme.</li>
-                                
-                                <li>Les recherches, ateliers et articles sur le sujet se multiplient, témoignant de la vitalité de ce mouvement.</li>
+                                <li>l’égalité des droits,</li>
+                                <li>la fin des actions militaires menées par le gouvernement,</li>
+                                <li>la fin de l'exploitation des personnes et de l'environnement.</li>
                             </ul>
 
-                        <p class="frise__legende-button"
-                        x-on:click="cacherFrise5();">OK !</p>
-                    </div>
-                </div>
-            </div>
-            <!--FIN CINQUIEME 5 BOUTON FRISE-->
-
-            <!--SIXIEME 6 BOUTON FRISE-->
-            <div class="frise__contenu__date-div">
-                <div class="frise__visionneuse">
-                    <div x-on:click="montrerFrise6();">
-                        <div class="frise__clickable">
-                            <div class="frise__circle-btn"></div>
-                            <div class="frise__date">
-                                <h2>1991</h2>
-                                <h3>“Navdanya”</h3>
-                            </div>
+                            <p class="frise__legende-button"
+                            x-on:click="cacherFrise4();">OK !</p>
                         </div>
                     </div>
-
-                    <div class="frise__legende6">
-                        <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
-                        <h3 class="frise__legende-title">1991</h3>
-                        <p class="frise__legende-caption"><strong>Vandana Shiva</strong> (figure de l’écoféminisme) fonde « Navdanya » en Inde. 
-
-                            C’est une association pour la conservation de la biodiversité sauvage, où les femmes tiennent une place essentielle.</p>
-
-                        <p class="frise__legende-button"
-                        x-on:click="cacherFrise6();">OK !</p>
-                    </div>
                 </div>
-            </div>
-            <!--FIN SIXIEME 6 BOUTON FRISE-->
+                <!--FIN QUATRIEME 4 BOUTON FRISE-->
 
-            <!--SEPTIEME 7 BOUTON FRISE-->
-            <div class="frise__contenu__date-div">
-                <div class="frise__visionneuse">
-                    <div x-on:click="montrerFrise7();">
-                        <div class="frise__clickable">
-                            <div class="frise__circle-btn"></div>
+
+                <!--CINQUIEME 5 BOUTON FRISE-->
+                <div class="frise__contenu__date-div">
+                    <div class="frise__visionneuse">
+                        <div x-on:click="montrerFrise5();">
+                            <div class="frise__clickable"><div class="frise__circle-btn"></div>
                             <div class="frise__date">
-                                <h2>2019</h2>
-                                <h3 class="frise__date-caption">Greta Thunberg</h3>
+                                <h2>1990</h2>
+                                <h3>Karen J. Warren</h3>
                             </div>
                         </div>
-                    </div>
+                                
+                        </div>
 
-                    <div class="frise__legende7">
-                        <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
-                        <h3 class="frise__legende-title">2019</h3>
-                        <ul class="frise__legende-list">
-                            <li>Lors des différentes marches pour le climat impulsées par <strong>Greta Thunberg</strong>, de nombreuses jeunes filles ont pris l’initiative de mettre une touche féministe dans leur pancarte (en évoquant par exemple le problème des tampons dont les composants pollueraient autant la planète que le corps des femmes).</li>
-                            <li>Greta Thunberg donne une partie de son « prix Liberté » à l’association Care, qu’elle identifie comme un soutien « aux femmes et filles des pays du Sud, face aux effets de la hausse des températures et du changement climatique ».</li>
-                        </ul>
-                        <p class="frise__legende-button"
-                        x-on:click="cacherFrise7();">OK !</p>
+                        <div class="frise__legende5">
+                            <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
+                            <h3 class="frise__legende-title">1990</h3>
+                            <p class="frise__legende-caption">Dans un article intitulé « Le pouvoir et la promesse du féminisme écologique », <strong>Karen J. Warren</strong> met en exergue les 
+                                apports et enrichissements croisés de l'écoféminisme, avec à la fois :</p>
+                                <ul class="frise__legende-list">
+                                    <li>une importance du féminisme pour l’éthique environnementale.</li>
+                                    
+                                    <li>une importance de l’environnementalisme pour le féminisme.</li>
+                                    
+                                    <li>Les recherches, ateliers et articles sur le sujet se multiplient, témoignant de la vitalité de ce mouvement.</li>
+                                </ul>
+
+                            <p class="frise__legende-button"
+                            x-on:click="cacherFrise5();">OK !</p>
+                        </div>
                     </div>
                 </div>
+                <!--FIN CINQUIEME 5 BOUTON FRISE-->
+
+                <!--SIXIEME 6 BOUTON FRISE-->
+                <div class="frise__contenu__date-div">
+                    <div class="frise__visionneuse">
+                        <div x-on:click="montrerFrise6();">
+                            <div class="frise__clickable">
+                                <div class="frise__circle-btn"></div>
+                                <div class="frise__date">
+                                    <h2>1991</h2>
+                                    <h3>“Navdanya”</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frise__legende6">
+                            <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
+                            <h3 class="frise__legende-title">1991</h3>
+                            <p class="frise__legende-caption"><strong>Vandana Shiva</strong> (figure de l’écoféminisme) fonde « Navdanya » en Inde. 
+
+                                C’est une association pour la conservation de la biodiversité sauvage, où les femmes tiennent une place essentielle.</p>
+
+                            <p class="frise__legende-button"
+                            x-on:click="cacherFrise6();">OK !</p>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN SIXIEME 6 BOUTON FRISE-->
+
+                <!--SEPTIEME 7 BOUTON FRISE-->
+                <div class="frise__contenu__date-div">
+                    <div class="frise__visionneuse">
+                        <div x-on:click="montrerFrise7();">
+                            <div class="frise__clickable">
+                                <div class="frise__circle-btn"></div>
+                                <div class="frise__date">
+                                    <h2>2019</h2>
+                                    <h3 class="frise__date-caption">Greta Thunberg</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frise__legende7">
+                            <h2 class="frise__legende-subtitle">L’histoire de l’écoféminisme</h2>
+                            <h3 class="frise__legende-title">2019</h3>
+                            <ul class="frise__legende-list">
+                                <li>Lors des différentes marches pour le climat impulsées par <strong>Greta Thunberg</strong>, de nombreuses jeunes filles ont pris l’initiative de mettre une touche féministe dans leur pancarte (en évoquant par exemple le problème des tampons dont les composants pollueraient autant la planète que le corps des femmes).</li>
+                                <li>Greta Thunberg donne une partie de son « prix Liberté » à l’association Care, qu’elle identifie comme un soutien « aux femmes et filles des pays du Sud, face aux effets de la hausse des températures et du changement climatique ».</li>
+                            </ul>
+                            <p class="frise__legende-button"
+                            x-on:click="cacherFrise7();">OK !</p>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN SEPTIEME 7 BOUTON FRISE-->
             </div>
-            <!--FIN SEPTIEME 7 BOUTON FRISE-->
-        
         </div> 
 
             <div class="extra__button-redirection-div">
