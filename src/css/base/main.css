@@ -11,7 +11,7 @@ html {
 }
 
 body {  
-    background: linear-gradient(#ff74f1, #5aa7ee, #ffa69c, #ffbe73, #7effd8);
+    background: linear-gradient(#ff74f1, #5aa7ee);
     font-family: 'ABeeZee', sans-serif;
     font-size: var(--corps);
 }
