@@ -1,173 +1,327 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
-<head>
-    <link rel='stylesheet' href='src/css/style.css'>
-    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html
+  lang="fr"
+  x-data="{ menuIsOpen: false }"
+  :class="menuIsOpen && 'noscroll'"
+>
+  <head>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script
+      defer=""
+      src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Equalshare - Accueil</title>
-</head>
-<!-- Validé par W3C-->
-<body>
+  </head>
+  <!-- Validé par W3C-->
+  <body>
     <!-- id='backhome' pour retourner en haut de la page-->
     <div id="backhome" class="back__target"></div>
 
     <!--header de la page-->
-    <header class="headerpage container"> 
-        <div class="header__logo">
-            <a href="/"><img src="assets/icones/Equalshare.svg" alt="Equalshare"></a>
-        </div>
-    
-        <div class="headerpage__menu">
-            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-                x-on:click="menuIsOpen = !menuIsOpen" 
-                :class="menuIsOpen && 'menu-btn--open'">
-                <span class="menu-btn__bar"></span>
-            </button>
+    <header class="headerpage container">
+      <div class="header__logo">
+        <a href="/"
+          ><img src="assets/icones/Equalshare.svg" alt="Equalshare"
+        /></a>
+      </div>
 
-            <nav  class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-                <img src="assets/icones/Equalshare.svg" alt="Logo Equalshare du menu hamburger" class="menu__img">
-                <ul class="menu__list listUnstyled">
-                    <li class="menu__item"><a href="ecofeminisme.html" class="menu__link">Écoféminisme, féminisme écologique</a></li>
-                    <li class="menu__item"><a href="andrea_dworkin.html" class="menu__link">Pornographie et féminisme</a></li>
-                    <li class="menu__item"><a href="contre_culture_confiture.html" class="menu__link">Contre-culture confiture</a></li>
-                    <li class="menu__item"><a href="frise.html" class="menu__link__2">Frise</a></li>
-                    <li class="menu__item"><a href="galerie.html" class="menu__link__2">Galerie</a></li>
-                    <li class="menu__item"><a href="glossaire.html" class="menu__link__3">Glossaire</a></li>
-                    <li class="menu__item"><a href="a_propos_contact.html" class="menu__link__3">À propos & Contact</a></li>
-                    <li class="menu__item"><a href="autres_projets.html" class="menu__link__3">Autres projets</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="headerpage__menu">
+        <button
+          class="header__menu-btn menu-btn"
+          aria-label="menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          x-on:click="menuIsOpen = !menuIsOpen"
+          :class="menuIsOpen && 'menu-btn--open'"
+        >
+          <span class="menu-btn__bar"></span>
+        </button>
+
+        <nav
+          class="header__menu menu"
+          id="mainNav"
+          :class="menuIsOpen && 'menu--open'"
+        >
+          <img
+            src="assets/icones/Equalshare.svg"
+            alt="Logo Equalshare du menu hamburger"
+            class="menu__img"
+          />
+          <ul class="menu__list listUnstyled">
+            <li class="menu__item">
+              <a href="ecofeminisme.html" class="menu__link"
+                >Écoféminisme, féminisme écologique</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="andrea_dworkin.html" class="menu__link"
+                >Pornographie et féminisme</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="contre_culture_confiture.html" class="menu__link"
+                >Contre-culture confiture</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="frise.html" class="menu__link__2">Frise</a>
+            </li>
+            <li class="menu__item">
+              <a href="galerie.html" class="menu__link__2">Galerie</a>
+            </li>
+            <li class="menu__item">
+              <a href="glossaire.html" class="menu__link__3">Glossaire</a>
+            </li>
+            <li class="menu__item">
+              <a href="a_propos_contact.html" class="menu__link__3"
+                >À propos & Contact</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="autres_projets.html" class="menu__link__3"
+                >Autres projets</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <!--hero de la page-->
-        <div class="hero">
-            <div class="hero__img">
-                <img src="assets/img/cloud.svg" alt="nuage">
+      <!--hero de la page-->
+      <div class="hero">
+        <div class="hero__img">
+          <img src="assets/img/cloud.svg" alt="nuage" />
+        </div>
+        <h1 class="hero__title">Le site qui partage l’égalité.</h1>
+        <div class="hero__desc">
+          <p>
+            Afin que la femme soit considérée égale à l’homme, ces grandes
+            figures ont bouleversé les cultures et les façons de penser.
+          </p>
+          <p>
+            Découvrez les combats du féminisme à travers des articles et des
+            récits sous différents formats.
+          </p>
+        </div>
+        <div class="hero__start">
+          <p class="hero__start">Commencer !</p>
+          <a href="#article" class="hero__start__button">
+            <img
+              src="assets/icones/icon_scroll_1.svg"
+              alt="Bouton scroll accueil"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!--articles à lire-->
+      <div id="article" class="articles-card">
+        <article class="card">
+          <img
+            src="assets/img/art1-hp.webp"
+            alt="manifestation écoféministe"
+            class="card__img"
+          />
+          <h2 class="card__title">
+            Écoféminisme : le mouvement féministe écologique
+          </h2>
+          <div class="card__bg">
+            <h3 class="card__desc">
+              Le féminisme écologique (ou écoféminisme) est un courant
+              philosophique des années 70 de plus en plus populaire. Découvrez
+              son histoire.
+            </h3>
+            <div class="homepage__link__div">
+              <a href="ecofeminisme.html" class="homepage__link"
+                >En savoir plus...
+              </a>
             </div>
-            <h1 class="hero__title">Le site qui partage l’égalité.</h1>
-            <div class="hero__desc">
-                <p>Afin que la femme soit considérée égale à l’homme, ces grandes figures ont bouleversé les cultures et les façons de penser. </p>
-                <p>Découvrez les combats du féminisme à travers des articles et des récits sous différents formats.</p   >
-            </div>   
-            <div class="hero__start">
-                <p class="hero__start">Commencer !</p>
-                <a href="#article" class="hero__start__button">
-                    <img src="assets/icones/icon_scroll_1.svg" alt="Bouton scroll accueil">
-                </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="assets/img/art2-hp.webp"
+            alt="portrait Andrea Dworkin"
+            class="card__img"
+          />
+          <h2 class="card__title">
+            Pornographie et féminisme: le combat d’Andrea Dworkin
+          </h2>
+          <div class="card__bg">
+            <h3 class="card__desc">
+              Dans le but de mettre fin à la pornographie et à l'humiliation des
+              femmes, Andrea Dworkin s'est battue durant l'entièreté de sa vie.
+              Voici sa biographie.
+            </h3>
+            <div class="homepage__link__div">
+              <a href="andrea_dworkin.html" class="homepage__link"
+                >En savoir plus...
+              </a>
             </div>
-        </div>
+          </div>
+        </article>
 
-        <!--articles à lire-->
-        <div id="article" class="articles-card">
-            <article class="card">
-                <img src="assets/img/art1-hp.webp" alt="manifestation écoféministe" class="card__img">
-                <h2 class="card__title">
-                    Écoféminisme : le mouvement féministe écologique
-                </h2>
-                <div class="card__bg">
-                    <h3 class="card__desc">
-                        Le féminisme écologique (ou écoféminisme)
-                        est un courant philosophique des années 70 de plus en plus populaire.
-                        Découvrez son histoire.
-                    </h3>
-                    <div class="homepage__link__div">
-                        <a href="ecofeminisme.html" class="homepage__link">En savoir plus... </a>
-                    </div>
-                </div>
-            </article>
+        <article class="card">
+          <img
+            src="assets/img/art3-hp.webp"
+            alt="Première de couverture du livre d'Ismène de Beauvoir"
+            class="card__img"
+          />
+          <h2 class="card__title">
+            “Contre-culture confiture” : les chroniques d’Agathe Parmentier
+          </h2>
+          <div class="card__bg">
+            <h3 class="card__desc">
+              Agathe Parmentier (Ismène de Beauvoir) publie en 2013 un recueil
+              de chroniques qu'elle nomme "Contre-culture confiture".
+              Découvrez-le ici.
+            </h3>
+            <div class="homepage__link__div">
+              <a href="contre_culture_confiture.html" class="homepage__link"
+                >En savoir plus...
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
 
-            <article class="card">
-                <img src="assets/img/art2-hp.webp" alt="portrait Andrea Dworkin" class="card__img">
-                <h2 class="card__title">
-                    Pornographie et féminisme: le combat d’Andrea Dworkin
-                </h2>
-                <div class="card__bg">
-                    <h3 class="card__desc">
-                        Dans le but de mettre fin à la pornographie et à l'humiliation des femmes, 
-                        Andrea Dworkin s'est battue durant l'entièreté de sa vie. Voici sa biographie.
-                    </h3>
-                    <div class="homepage__link__div">
-                        <a href="andrea_dworkin.html" class="homepage__link">En savoir plus... </a>
-                    </div>
-                </div>
-            </article>
+      <!--extras (galerie, frise, vidéo)-->
+      <div>
+        <article class="extra">
+          <img
+            src="assets/img/frise_hp.webp"
+            alt="Carte du monde pour la frise"
+            class="extra__img"
+          />
+          <h2 class="extra__title">Frise</h2>
+          <h3 class="extra__desc">
+            Découvrez une frise interactive traitant de l’écoféminisme.
+          </h3>
+          <div class="homepage__link__div">
+            <a href="frise.html" class="homepage__link">Découvrir</a>
+          </div>
+        </article>
 
-            <article class="card">
-                <img src="assets/img/art3-hp.webp" alt="Première de couverture du livre d'Ismène de Beauvoir" class="card__img">
-                <h2 class="card__title">
-                    “Contre-culture confiture” : les chroniques d’Agathe Parmentier
-                </h2>
-                <div class="card__bg">
-                    <h3 class="card__desc">
-                        Agathe Parmentier (Ismène de Beauvoir) publie en 2013 un recueil de chroniques 
-                        qu'elle nomme "Contre-culture confiture". Découvrez-le ici. 
-                    </h3>
-                    <div class="homepage__link__div">
-                        <a href="contre_culture_confiture.html" class="homepage__link">En savoir plus... </a>
-                    </div>
-                </div>
-            </article>
-        </div>
+        <article class="extra">
+          <img
+            src="assets/img/galerie_hp.webp"
+            alt="Photographie d'une galerie"
+            class="extra__img"
+          />
+          <h2 class="extra__title">Galerie</h2>
+          <h3 class="extra__desc">
+            Découvrez des figures françaises et internationales du féminisme.
+          </h3>
+          <div class="homepage__link__div">
+            <a href="galerie.html" class="homepage__link">Découvrir</a>
+          </div>
+        </article>
 
-        <!--extras (galerie, frise, vidéo)-->
-        <div> 
-            <article class="extra">
-                <img src="assets/img/frise_hp.webp" alt="Carte du monde pour la frise" class="extra__img">
-                <h2 class="extra__title">Frise</h2>
-                <h3 class="extra__desc">Découvrez une frise interactive traitant de l’écoféminisme.</h3>
-                <div class="homepage__link__div">
-                    <a href="frise.html" class="homepage__link">Découvrir</a>
-                </div>
-            </article>
+        <article class="video__div">
+          <h2>Que pensez-vous des oeuvres féministes ?</h2>
 
-            <article class="extra">
-                <img src="assets/img/galerie_hp.webp" alt="Photographie d'une galerie" class="extra__img">
-                <h2 class="extra__title">Galerie</h2>
-                <h3 class="extra__desc">Découvrez des figures françaises et internationales du féminisme.</h3>
-                <div class="homepage__link__div">
-                    <a href="galerie.html" class="homepage__link">Découvrir</a>
-                </div>
-            </article>
+          <video controls poster="assets/img/miniature_video.jpg">
+            <source
+              src="http://eliotgros.fr/video/Micro_trottoir_francais_Gros_Hoareau_Joury.mp4"
+              type="video/mp4"
+            />
+            Votre navigateur ne prend pas en charge la balise vidéo.
+          </video>
 
-            <article class="video__div">
-                <h2>Que pensez-vous des oeuvres féministes ?</h2>
-                <video src="http://eliotgros.fr/video/videoplayback.mp4" poster="assets/img/miniature_video.jpg" controls></video>
-                <p>Nous avons réalisé un micro-trottoir dans les rues de Montbéliard afin de recueillir l'avis
-                    de différentes personnes sur le lien entre l'art et le féminisme. 
-                </p>
-            </article>
-        </div>
+          <p>
+            Nous avons réalisé un micro-trottoir dans les rues de Montbéliard
+            afin de recueillir l'avis de différentes personnes sur le lien entre
+            l'art et le féminisme.
+          </p>
+        </article>
+      </div>
 
-        <!--footer de la page-->
+      <!--footer de la page-->
 
-        <div class="back__button">
-            <a href="#backhome" class="back__button__link"><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"></a>
-        </div>
-
+      <div class="back__button">
+        <a href="#backhome" class="back__button__link"
+          ><img src="assets/icones/haut_page.svg" alt="Bouton haut de page"
+        /></a>
+      </div>
     </main>
-    
+
     <footer class="footerpage container">
+      <p>
+        Eliot Gros MMi B1 |
+        <a href="mailto:eliot.gpro@gmail.com" class="footer__link"
+          >eliot.gpro@gmail.com<i></i
+        ></a>
+      </p>
 
-        <p> Eliot Gros MMi B1  | <a href="mailto:eliot.gpro@gmail.com" class="footer__link">eliot.gpro@gmail.com<i></i></a></p>
+      <ul class="listUnstyled footerpage__icon">
+        <li>
+          <a
+            href="https://www.facebook.com/people/Equalshare/100075648574658/"
+            class="footerpage__iconli"
+            ><img
+              src="assets/icones/socialmedia/facebook.svg"
+              alt="Facebook"
+              class="footerpage__iconli"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/equalshare_mmi/"
+            class="footerpage__iconli"
+            ><img
+              src="assets/icones/socialmedia/instagram.svg"
+              alt="Instagram"
+              class="footerpage__iconli"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/equalshare_mmi"
+            class="footerpage__iconli"
+            ><img
+              src="assets/icones/socialmedia/twitter.svg"
+              alt="Twitter"
+              class="footerpage__iconli"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/eliot-gros-183b37223/"
+            class="footerpage__iconli"
+            ><img
+              src="assets/icones/socialmedia/linkedin.svg"
+              alt="Linkedin"
+              class="footerpage__iconli"
+          /></a>
+        </li>
+      </ul>
 
-        <ul class="listUnstyled footerpage__icon">
-            <li><a href="https://www.facebook.com/people/Equalshare/100075648574658/" class="footerpage__iconli"><img src="assets/icones/socialmedia/facebook.svg" alt="Facebook" class="footerpage__iconli"></a></li>
-            <li><a href="https://www.instagram.com/equalshare_mmi/" class="footerpage__iconli"><img src="assets/icones/socialmedia/instagram.svg" alt="Instagram" class="footerpage__iconli"></a></li>
-            <li><a href="https://twitter.com/equalshare_mmi" class="footerpage__iconli"><img src="assets/icones/socialmedia/twitter.svg" alt="Twitter" class="footerpage__iconli"></a></li>
-            <li><a href="https://www.linkedin.com/in/eliot-gros-183b37223/" class="footerpage__iconli"><img src="assets/icones/socialmedia/linkedin.svg" alt="Linkedin" class="footerpage__iconli"></a></li>
-        </ul>
+      <p>
+        Projet réalisé dans le cadre d’un exercice pédagogique au département
+        <br />
+        <a href="http://mmimontbeliard.com/" class="footer__link"
+          >MMi de Montbéliard</a
+        >
+      </p>
 
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <br>
-            <a href="http://mmimontbeliard.com/" class="footer__link">MMi de Montbéliard</a></p>
-
-        <div class="footerpage__lang">
-            <img src="assets/icones/Drapeau_fr_selec.svg" alt="LANGUE FRANçAISE ACTIVé" class="footer__lang-img">
-            <a href="eng_index.html" class="footerpage__lang-link"><img src="assets/icones/Dreapeau_ang.svg" alt="LANGUE ANGLAISE DéSACTIVé" class="footer__lang-img"></a>
-        </div>
+      <div class="footerpage__lang">
+        <img
+          src="assets/icones/Drapeau_fr_selec.svg"
+          alt="LANGUE FRANçAISE ACTIVé"
+          class="footer__lang-img"
+        />
+        <a href="eng_index.html" class="footerpage__lang-link"
+          ><img
+            src="assets/icones/Dreapeau_ang.svg"
+            alt="LANGUE ANGLAISE DéSACTIVé"
+            class="footer__lang-img"
+        /></a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
